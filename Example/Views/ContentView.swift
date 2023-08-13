@@ -38,6 +38,34 @@ struct ContentView: View {
           .padding([.vertical, .horizontal], 4)
       )
   }
+  
+  // MARK: - Placeholder View
+    
+    private var placeholderView: some View {
+      ZStack {
+        Color.secondary.opacity(0.1)
+        VStack(spacing: 16) {
+          iconView
+          titleView
+        }
+      }
+      .ignoresSafeArea(.container, edges: .bottom)
+    }
+    
+    private var titleView: some View {
+      Text("No Examples")
+        .font(.title3)
+        .frame(minHeight: 22)
+        .multilineTextAlignment(.center)
+        .foregroundStyle(.secondary)
+    }
+    
+    private var iconView: some View {
+      Image(systemName: "square.on.square.badge.person.crop")
+        .font(.title3)
+        .foregroundStyle(Color.secondary)
+        .frame(minWidth: 20, minHeight: 20)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
