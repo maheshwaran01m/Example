@@ -102,6 +102,7 @@ extension ContentView {
       case .overlay: CustomOverlayView()
       case .disclosureView: CustomDisclosureGroupView()
       case .groupBox: CustomGroupBoxView()
+      case .dragGesture: CustomGestureView()
       }
     }
   }
