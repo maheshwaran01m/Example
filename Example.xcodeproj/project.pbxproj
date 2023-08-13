@@ -28,6 +28,7 @@
 		9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119F72A8927A8005990BB /* CustomAlertView.swift */; };
 		9D0119FA2A8927CB005990BB /* CustomAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119F92A8927CB005990BB /* CustomAnimationView.swift */; };
 		9D0119FC2A8927EF005990BB /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119FB2A8927EF005990BB /* CustomBlurView.swift */; };
+		9D0119FE2A892817005990BB /* CustomDialogAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119FD2A892817005990BB /* CustomDialogAlertView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		9D0119F72A8927A8005990BB /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		9D0119F92A8927CB005990BB /* CustomAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationView.swift; sourceTree = "<group>"; };
 		9D0119FB2A8927EF005990BB /* CustomBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
+		9D0119FD2A892817005990BB /* CustomDialogAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogAlertView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				9D0119F72A8927A8005990BB /* CustomAlertView.swift */,
 				9D0119F92A8927CB005990BB /* CustomAnimationView.swift */,
 				9D0119FB2A8927EF005990BB /* CustomBlurView.swift */,
+				9D0119FD2A892817005990BB /* CustomDialogAlertView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */,
 				9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */,
 				9D0119E42A892621005990BB /* CustomGradientView.swift in Sources */,
+				9D0119FE2A892817005990BB /* CustomDialogAlertView.swift in Sources */,
 				9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */,
 				9D0119F02A892707005990BB /* CustomListView.swift in Sources */,
 				9D0119EE2A8926E2005990BB /* CustomMoveItemView.swift in Sources */,
