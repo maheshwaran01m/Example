@@ -100,6 +100,8 @@ extension ContentView {
       case .swipe: CustomSwipeActionView()
       case .refresh: CustomRefreshView()
       case .overlay: CustomOverlayView()
+      case .disclosureView: CustomDisclosureGroupView()
+      case .groupBox: CustomGroupBoxView()
       }
     }
   }
