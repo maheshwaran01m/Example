@@ -10,12 +10,13 @@ import SwiftUI
 extension ContentView {
   
   enum ViewCoordinator: String, CaseIterable {
-    case text
+    case text, textFieldView
     
     
     var title: String {
       switch self {
       case .text: return "Text"
+      case .textFieldView: return "Text Field"
       }
     }
     
@@ -24,6 +25,7 @@ extension ContentView {
     var destinationView: some View {
       switch self {
       case .text: CustomTextView()
+      case .textFieldView: CustomTextFieldView()
       }
     }
   }
