@@ -11,7 +11,7 @@ extension ContentView {
   
   enum ViewCoordinator: String, CaseIterable {
     case text, textFieldView, textEditorView, imageView, pickerView, stackView, colorView, gradientView,
-         buttonView, stepperView, datePickerView
+         buttonView, stepperView, datePickerView, photoPickerView
     
     
     var title: String {
@@ -27,6 +27,7 @@ extension ContentView {
       case .buttonView: return "Button"
       case .stepperView: return "Stepper"
       case .datePickerView: return "Date Picker"
+      case .photoPickerView: return "Photo Picker"
       }
     }
     
@@ -45,6 +46,7 @@ extension ContentView {
       case .buttonView: CustomButtonView()
       case .stepperView: CustomStepperView()
       case .datePickerView: CustomDatePickerView()
+      case .photoPickerView: CustomPhotoPickerView()
       }
     }
   }
