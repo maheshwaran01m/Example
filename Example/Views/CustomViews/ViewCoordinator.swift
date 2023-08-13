@@ -10,7 +10,7 @@ import SwiftUI
 extension ContentView {
   
   enum ViewCoordinator: String, CaseIterable {
-    case text, textFieldView, textEditorView
+    case text, textFieldView, textEditorView, imageView
     
     
     var title: String {
@@ -18,6 +18,7 @@ extension ContentView {
       case .text: return "Text"
       case .textFieldView: return "Text Field"
       case .textEditorView: return "Text Editor"
+      case .imageView: return "Image"
       }
     }
     
@@ -28,6 +29,7 @@ extension ContentView {
       case .text: CustomTextView()
       case .textFieldView: CustomTextFieldView()
       case .textEditorView: CustomTextEditorView()
+      case .imageView: CustomImageView()
       }
     }
   }
