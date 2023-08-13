@@ -13,7 +13,7 @@ extension ContentView {
     case text, textFieldView, textEditorView, imageView, pickerView, stackView, colorView, gradientView,
          buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
-         tabView, safeAreaView, loaderView, colorPickerView
+         tabView, safeAreaView, loaderView, colorPickerView, toolBarView
     
     
     var title: String {
@@ -44,6 +44,7 @@ extension ContentView {
       case .safeAreaView: return "SafeArea"
       case .loaderView: return "Loader"
       case .colorPickerView: return "Color Picker"
+      case .toolBarView: return "ToolBar"
       }
     }
     
@@ -77,6 +78,7 @@ extension ContentView {
       case .safeAreaView: CustomSafeAreaView()
       case .loaderView: CustomLoaderView()
       case .colorPickerView: CustomColorPickerView()
+      case .toolBarView: CustomToolBarButtonView()
       }
     }
   }
