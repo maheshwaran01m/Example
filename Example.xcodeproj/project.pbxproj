@@ -46,6 +46,7 @@
 		9D011A1C2A892A73005990BB /* CustomDisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1B2A892A73005990BB /* CustomDisclosureGroupView.swift */; };
 		9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */; };
 		9D011A202A892AC4005990BB /* CustomGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1F2A892AC4005990BB /* CustomGestureView.swift */; };
+		9D011A222A892AE7005990BB /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A212A892AE7005990BB /* CustomProgressView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		9D011A1B2A892A73005990BB /* CustomDisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDisclosureGroupView.swift; sourceTree = "<group>"; };
 		9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupBoxView.swift; sourceTree = "<group>"; };
 		9D011A1F2A892AC4005990BB /* CustomGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGestureView.swift; sourceTree = "<group>"; };
+		9D011A212A892AE7005990BB /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				9D011A1B2A892A73005990BB /* CustomDisclosureGroupView.swift */,
 				9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */,
 				9D011A1F2A892AC4005990BB /* CustomGestureView.swift */,
+				9D011A212A892AE7005990BB /* CustomProgressView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */,
 				9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */,
 				9D011A142A8929A8005990BB /* CustomFormView.swift in Sources */,
+				9D011A222A892AE7005990BB /* CustomProgressView.swift in Sources */,
 				9D011A082A8928D1005990BB /* CustomColorPickerView.swift in Sources */,
 				9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */,
 				9D011A182A892A25005990BB /* CustomRefreshView.swift in Sources */,
