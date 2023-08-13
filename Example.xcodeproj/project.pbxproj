@@ -19,6 +19,7 @@
 		9D0119E62A89264E005990BB /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119E52A89264E005990BB /* CustomButtonView.swift */; };
 		9D0119E82A892672005990BB /* CustomStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119E72A892672005990BB /* CustomStepperView.swift */; };
 		9D0119EA2A892695005990BB /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119E92A892695005990BB /* CustomDatePickerView.swift */; };
+		9D0119EC2A8926C0005990BB /* CustomPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119EB2A8926C0005990BB /* CustomPhotoPickerView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		9D0119E52A89264E005990BB /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		9D0119E72A892672005990BB /* CustomStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepperView.swift; sourceTree = "<group>"; };
 		9D0119E92A892695005990BB /* CustomDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerView.swift; sourceTree = "<group>"; };
+		9D0119EB2A8926C0005990BB /* CustomPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhotoPickerView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				9D0119E52A89264E005990BB /* CustomButtonView.swift */,
 				9D0119E72A892672005990BB /* CustomStepperView.swift */,
 				9D0119E92A892695005990BB /* CustomDatePickerView.swift */,
+				9D0119EB2A8926C0005990BB /* CustomPhotoPickerView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0119EC2A8926C0005990BB /* CustomPhotoPickerView.swift in Sources */,
 				9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */,
 				9D0119D42A89222C005990BB /* ViewCoordinator.swift in Sources */,
 				9D0119D62A89229C005990BB /* CustomTextView.swift in Sources */,
