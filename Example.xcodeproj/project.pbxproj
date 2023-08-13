@@ -36,6 +36,7 @@
 		9D011A082A8928D1005990BB /* CustomColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A072A8928D1005990BB /* CustomColorPickerView.swift */; };
 		9D011A0A2A8928F6005990BB /* CustomToolBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A092A8928F6005990BB /* CustomToolBarButtonView.swift */; };
 		9D011A0C2A89291C005990BB /* CustomToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A0B2A89291C005990BB /* CustomToggleView.swift */; };
+		9D011A0E2A89293D005990BB /* CustomSegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A0D2A89293D005990BB /* CustomSegmentedControlView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		9D011A072A8928D1005990BB /* CustomColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPickerView.swift; sourceTree = "<group>"; };
 		9D011A092A8928F6005990BB /* CustomToolBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBarButtonView.swift; sourceTree = "<group>"; };
 		9D011A0B2A89291C005990BB /* CustomToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleView.swift; sourceTree = "<group>"; };
+		9D011A0D2A89293D005990BB /* CustomSegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControlView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				9D011A072A8928D1005990BB /* CustomColorPickerView.swift */,
 				9D011A092A8928F6005990BB /* CustomToolBarButtonView.swift */,
 				9D011A0B2A89291C005990BB /* CustomToggleView.swift */,
+				9D011A0D2A89293D005990BB /* CustomSegmentedControlView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				9D0119FE2A892817005990BB /* CustomDialogAlertView.swift in Sources */,
 				9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */,
 				9D0119F02A892707005990BB /* CustomListView.swift in Sources */,
+				9D011A0E2A89293D005990BB /* CustomSegmentedControlView.swift in Sources */,
 				9D011A0C2A89291C005990BB /* CustomToggleView.swift in Sources */,
 				9D011A042A89288B005990BB /* CustomSafeAreaView.swift in Sources */,
 				9D0119EE2A8926E2005990BB /* CustomMoveItemView.swift in Sources */,
