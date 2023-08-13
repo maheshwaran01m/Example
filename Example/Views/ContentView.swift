@@ -75,7 +75,7 @@ struct ContentView: View {
     
     private var iconView: some View {
       Image(systemName: "square.on.square.badge.person.crop")
-        .font(.title3)
+        .font(.title)
         .foregroundStyle(Color.secondary)
         .frame(minWidth: 20, minHeight: 20)
     }
