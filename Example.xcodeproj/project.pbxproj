@@ -25,6 +25,7 @@
 		9D0119F22A89272D005990BB /* CustomScrollReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119F12A89272D005990BB /* CustomScrollReaderView.swift */; };
 		9D0119F42A892756005990BB /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119F32A892756005990BB /* CustomScrollView.swift */; };
 		9D0119F62A892781005990BB /* CustomMatchedGeometryEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119F52A892781005990BB /* CustomMatchedGeometryEffectView.swift */; };
+		9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119F72A8927A8005990BB /* CustomAlertView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		9D0119F12A89272D005990BB /* CustomScrollReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollReaderView.swift; sourceTree = "<group>"; };
 		9D0119F32A892756005990BB /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 		9D0119F52A892781005990BB /* CustomMatchedGeometryEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMatchedGeometryEffectView.swift; sourceTree = "<group>"; };
+		9D0119F72A8927A8005990BB /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				9D0119F12A89272D005990BB /* CustomScrollReaderView.swift */,
 				9D0119F32A892756005990BB /* CustomScrollView.swift */,
 				9D0119F52A892781005990BB /* CustomMatchedGeometryEffectView.swift */,
+				9D0119F72A8927A8005990BB /* CustomAlertView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				9D0119DE2A89259F005990BB /* CustomPickerView.swift in Sources */,
 				9D0119E82A892672005990BB /* CustomStepperView.swift in Sources */,
 				9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */,
+				9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */,
 				9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */,
 				9D0119E42A892621005990BB /* CustomGradientView.swift in Sources */,
 				9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */,
