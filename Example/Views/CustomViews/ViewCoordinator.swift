@@ -12,7 +12,7 @@ extension ContentView {
   enum ViewCoordinator: String, CaseIterable {
     case text, textFieldView, textEditorView, imageView, pickerView, stackView, colorView, gradientView,
          buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
-         scrollView, matchedGeometryEffectView, alertView
+         scrollView, matchedGeometryEffectView, alertView, animationView,
     
     
     var title: String {
@@ -35,6 +35,7 @@ extension ContentView {
       case .scrollView: return "Scroll"
       case .matchedGeometryEffectView: return "Matched Geometry Effect"
       case .alertView: return "Alert"
+      case .animationView: return "Animation"
       }
     }
     
@@ -60,6 +61,7 @@ extension ContentView {
       case .scrollView: CustomScrollView()
       case .matchedGeometryEffectView: CustomMatchedGeometryEffectView()
       case .alertView: CustomAlertView()
+      case .animationView: CustomAnimationView()
       }
     }
   }
