@@ -54,6 +54,7 @@ extension ContentView {
       case .swipe: return "Swipe"
       case .refresh: return "Refresh"
       case .overlay: return "Overlay"
+      case .disclosureView: return "Disclosure"
       }
     }
     
