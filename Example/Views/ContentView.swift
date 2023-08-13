@@ -66,7 +66,7 @@ struct ContentView: View {
     }
     
     private var titleView: some View {
-      Text("No Examples")
+      Text("No Examples Available")
         .font(.title3)
         .frame(minHeight: 22)
         .multilineTextAlignment(.center)
