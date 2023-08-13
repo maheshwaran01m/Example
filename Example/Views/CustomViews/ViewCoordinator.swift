@@ -55,6 +55,9 @@ extension ContentView {
       case .refresh: return "Refresh"
       case .overlay: return "Overlay"
       case .disclosureView: return "Disclosure"
+      case .groupBox: return "GroupBox"
+      case .dragGesture: return "Drag Gesture"
+      case .progess: return "Progress"
       }
     }
     
