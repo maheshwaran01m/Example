@@ -34,6 +34,7 @@
 		9D011A042A89288B005990BB /* CustomSafeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A032A89288B005990BB /* CustomSafeAreaView.swift */; };
 		9D011A062A8928AE005990BB /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A052A8928AE005990BB /* CustomLoaderView.swift */; };
 		9D011A082A8928D1005990BB /* CustomColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A072A8928D1005990BB /* CustomColorPickerView.swift */; };
+		9D011A0A2A8928F6005990BB /* CustomToolBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A092A8928F6005990BB /* CustomToolBarButtonView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		9D011A032A89288B005990BB /* CustomSafeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSafeAreaView.swift; sourceTree = "<group>"; };
 		9D011A052A8928AE005990BB /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
 		9D011A072A8928D1005990BB /* CustomColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPickerView.swift; sourceTree = "<group>"; };
+		9D011A092A8928F6005990BB /* CustomToolBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBarButtonView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				9D011A032A89288B005990BB /* CustomSafeAreaView.swift */,
 				9D011A052A8928AE005990BB /* CustomLoaderView.swift */,
 				9D011A072A8928D1005990BB /* CustomColorPickerView.swift */,
+				9D011A092A8928F6005990BB /* CustomToolBarButtonView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				9D0119F62A892781005990BB /* CustomMatchedGeometryEffectView.swift in Sources */,
 				9D0119FA2A8927CB005990BB /* CustomAnimationView.swift in Sources */,
 				9D0119E22A8925FE005990BB /* CustomColorView.swift in Sources */,
+				9D011A0A2A8928F6005990BB /* CustomToolBarButtonView.swift in Sources */,
 				9D0119FC2A8927EF005990BB /* CustomBlurView.swift in Sources */,
 				9D011A062A8928AE005990BB /* CustomLoaderView.swift in Sources */,
 				9D0119EA2A892695005990BB /* CustomDatePickerView.swift in Sources */,
