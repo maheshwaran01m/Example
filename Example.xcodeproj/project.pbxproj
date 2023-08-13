@@ -13,6 +13,7 @@
 		9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119D92A8923B4005990BB /* CustomTextEditorView.swift */; };
 		9D0119DC2A892436005990BB /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119DB2A892436005990BB /* CustomImageView.swift */; };
 		9D0119DE2A89259F005990BB /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119DD2A89259F005990BB /* CustomPickerView.swift */; };
+		9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0119DF2A8925D9005990BB /* CustomStackView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		9D0119D92A8923B4005990BB /* CustomTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditorView.swift; sourceTree = "<group>"; };
 		9D0119DB2A892436005990BB /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		9D0119DD2A89259F005990BB /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		9D0119DF2A8925D9005990BB /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				9D0119D92A8923B4005990BB /* CustomTextEditorView.swift */,
 				9D0119DB2A892436005990BB /* CustomImageView.swift */,
 				9D0119DD2A89259F005990BB /* CustomPickerView.swift */,
+				9D0119DF2A8925D9005990BB /* CustomStackView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				9D0119DC2A892436005990BB /* CustomImageView.swift in Sources */,
 				9D0119D82A892367005990BB /* CustomTextFieldView.swift in Sources */,
 				9D0119DE2A89259F005990BB /* CustomPickerView.swift in Sources */,
+				9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */,
 				9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */,
 				9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */,
 			);
