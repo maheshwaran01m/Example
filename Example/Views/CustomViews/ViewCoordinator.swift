@@ -13,6 +13,7 @@ extension ContentView {
     case text, textFieldView, textEditorView, imageView, pickerView, stackView, colorView, gradientView,
          buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
+         tabView
     
     
     var title: String {
@@ -39,6 +40,7 @@ extension ContentView {
       case .blurView: return "Blur"
       case .dialogAlertView: return "Dialog Alert"
       case .searchView: return "Search"
+      case .tabView: return "Tab"
       }
     }
     
@@ -68,6 +70,7 @@ extension ContentView {
       case .blurView: CustomBlurView()
       case .dialogAlertView: CustomDialogAlertView()
       case .searchView: CustomSearchView()
+      case .tabView: CustomTabView()
       }
     }
   }
