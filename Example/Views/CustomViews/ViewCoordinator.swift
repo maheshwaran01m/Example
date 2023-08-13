@@ -103,6 +103,7 @@ extension ContentView {
       case .disclosureView: CustomDisclosureGroupView()
       case .groupBox: CustomGroupBoxView()
       case .dragGesture: CustomGestureView()
+      case .progess: CustomProgressView()
       }
     }
   }
