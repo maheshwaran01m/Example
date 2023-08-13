@@ -19,13 +19,26 @@ struct ContentView: View {
   
   var body: some View {
     NavigationStack {
-      List(filterViews, id: \.rawValue) { item in
-        listRowView(for: item)
-      }
-      .listStyle(.plain)
+      mainView
       .navigationTitle("SwiftUI")
       .searchable(text: $searchText)
     }
+  }
+  
+  @ViewBuilder
+   private var mainView: some View {
+     if !filterViews.isEmpty {
+       listView
+     } else {
+       placeholderView
+     }
+   }
+  
+  private var listView: some View {
+    List(filterViews, id: \.rawValue) { item in
+      listRowView(for: item)
+    }
+    .listStyle(.plain)
   }
   
   private func listRowView(for item: ViewCoordinator) -> some View {
