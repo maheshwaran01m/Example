@@ -14,7 +14,7 @@ extension ContentView {
          buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
-         link
+         link, form
     
     
     var title: String {
@@ -50,6 +50,7 @@ extension ContentView {
       case .segmentedControlView: return "Segmented Control"
       case .timer: return "Timer"
       case .link: return "Link"
+      case .form: return "Form"
       }
     }
     
@@ -88,6 +89,7 @@ extension ContentView {
       case .segmentedControlView: CustomSegmentedControlView()
       case .timer: CustomTimerView()
       case .link: CustomLinkView()
+      case .form: CustomFormView()
       }
     }
   }
