@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+  
+  @State private var viewCoordinator = ViewCoordinator.allCases
+  @State private var searchText = ""
+  
+  private var filterViews: [ViewCoordinator] {
+    guard !searchText.isEmpty else { return viewCoordinator }
+    return viewCoordinator.filter { $0.title.lowercased().localizedCaseInsensitiveContains(searchText) }
+  }
+  
   var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundColor(.accentColor)
-      Text("Hello, world!")
+    NavigationStack {
+      List(filterViews, id: \.rawValue) { item in
+        listRowView(for: item)
+      }
+      .listStyle(.plain)
+      .navigationTitle("SwiftUI")
+      .searchable(text: $searchText)
     }
-    .padding()
+  }
+  
+  private func listRowView(for item: ViewCoordinator) -> some View {
+    NavigationLink(item.title, destination: item.destinationView)
+      .listRowSeparator(.hidden)
+      .padding(.horizontal, 8)
+      .listRowBackground(
+        Color.secondary.opacity(0.1)
+          .clipShape(RoundedRectangle(cornerRadius: 16))
+          .padding([.vertical, .horizontal], 4)
+      )
   }
 }
 
