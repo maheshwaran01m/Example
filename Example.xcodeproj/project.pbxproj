@@ -40,6 +40,7 @@
 		9D011A102A892960005990BB /* CustomTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A0F2A892960005990BB /* CustomTimerView.swift */; };
 		9D011A122A892985005990BB /* CustomLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A112A892985005990BB /* CustomLinkView.swift */; };
 		9D011A142A8929A8005990BB /* CustomFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A132A8929A8005990BB /* CustomFormView.swift */; };
+		9D011A162A8929D2005990BB /* CustomSwipeActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A152A8929D2005990BB /* CustomSwipeActionView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		9D011A0F2A892960005990BB /* CustomTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimerView.swift; sourceTree = "<group>"; };
 		9D011A112A892985005990BB /* CustomLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLinkView.swift; sourceTree = "<group>"; };
 		9D011A132A8929A8005990BB /* CustomFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormView.swift; sourceTree = "<group>"; };
+		9D011A152A8929D2005990BB /* CustomSwipeActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeActionView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				9D011A0F2A892960005990BB /* CustomTimerView.swift */,
 				9D011A112A892985005990BB /* CustomLinkView.swift */,
 				9D011A132A8929A8005990BB /* CustomFormView.swift */,
+				9D011A152A8929D2005990BB /* CustomSwipeActionView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				9D0119FE2A892817005990BB /* CustomDialogAlertView.swift in Sources */,
 				9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */,
 				9D0119F02A892707005990BB /* CustomListView.swift in Sources */,
+				9D011A162A8929D2005990BB /* CustomSwipeActionView.swift in Sources */,
 				9D011A0E2A89293D005990BB /* CustomSegmentedControlView.swift in Sources */,
 				9D011A0C2A89291C005990BB /* CustomToggleView.swift in Sources */,
 				9D011A042A89288B005990BB /* CustomSafeAreaView.swift in Sources */,
