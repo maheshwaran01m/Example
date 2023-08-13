@@ -32,6 +32,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0119D12A89214F005990BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DB44AF72A891F80003844A3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9DA289A12A8920F100157409 /* MainResources */ = {
+			isa = PBXGroup;
+			children = (
+				9DB44AF52A891F80003844A3 /* ExampleApp.swift */,
+				9DB44AF92A891F81003844A3 /* Assets.xcassets */,
+				9DB44AFB2A891F81003844A3 /* Preview Content */,
+			);
+			path = MainResources;
+			sourceTree = "<group>";
+		};
 		9DB44AE92A891F80003844A3 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +69,8 @@
 		9DB44AF42A891F80003844A3 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				9DB44AF52A891F80003844A3 /* ExampleApp.swift */,
-				9DB44AF72A891F80003844A3 /* ContentView.swift */,
-				9DB44AF92A891F81003844A3 /* Assets.xcassets */,
-				9DB44AFB2A891F81003844A3 /* Preview Content */,
+				9DA289A12A8920F100157409 /* MainResources */,
+				9D0119D12A89214F005990BB /* Views */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -266,7 +282,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Example/MainResources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Example/MainResources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
