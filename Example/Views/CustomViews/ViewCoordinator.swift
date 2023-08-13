@@ -14,7 +14,7 @@ extension ContentView {
          buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
-         link, form, swipe, refresh, overlay, disclosureView, groupBox
+         link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture
     
     
     var title: String {
