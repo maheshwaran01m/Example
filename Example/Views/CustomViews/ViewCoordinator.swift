@@ -14,7 +14,7 @@ extension ContentView {
          buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
-         link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess
+         link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess, asyncImageView
     
     
     var title: String {
@@ -58,6 +58,7 @@ extension ContentView {
       case .groupBox: return "GroupBox"
       case .dragGesture: return "Drag Gesture"
       case .progess: return "Progress"
+      case .asyncImageView: return "Async Image"
       }
     }
     
@@ -104,6 +105,7 @@ extension ContentView {
       case .groupBox: CustomGroupBoxView()
       case .dragGesture: CustomGestureView()
       case .progess: CustomProgressView()
+      case .asyncImageView: CustomAsyncImageView()
       }
     }
   }
