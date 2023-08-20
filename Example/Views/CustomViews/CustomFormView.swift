@@ -28,7 +28,7 @@ struct CustomFormView: View {
       
       Section {
         Button("Save changes") {
-          // action
+          print("Save button tapped")
         }
       }
     }

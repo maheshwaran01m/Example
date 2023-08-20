@@ -52,6 +52,7 @@
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
 		9DB44AFD2A891F81003844A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */; };
+		9DB644E82A91AFF000768230 /* CustomViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB644E72A91AFF000768230 /* CustomViewHeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DB44AF92A891F81003844A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DB644E72A91AFF000768230 /* CustomViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewHeight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				9D011A1F2A892AC4005990BB /* CustomGestureView.swift */,
 				9D011A212A892AE7005990BB /* CustomProgressView.swift */,
 				9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */,
+				9DB644E72A91AFF000768230 /* CustomViewHeight.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				9D011A1C2A892A73005990BB /* CustomDisclosureGroupView.swift in Sources */,
 				9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */,
 				9D0119D42A89222C005990BB /* ViewCoordinator.swift in Sources */,
+				9DB644E82A91AFF000768230 /* CustomViewHeight.swift in Sources */,
 				9D0119D62A89229C005990BB /* CustomTextView.swift in Sources */,
 				9D0119E62A89264E005990BB /* CustomButtonView.swift in Sources */,
 				9D011A022A892860005990BB /* CustomTabView.swift in Sources */,
