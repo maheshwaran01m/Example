@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CustomBottomView: View {
   var body: some View {
-    Text("Hello, World!")
+    BottomSheet {
+      Text("Hello, World!")
+    }
   }
 }
 

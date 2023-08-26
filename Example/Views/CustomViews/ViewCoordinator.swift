@@ -15,7 +15,7 @@ extension ContentView {
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
          link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess, asyncImageView,
-         viewHeight
+         viewHeight, bottomSheet, customLayout
     
     
     var title: String {
@@ -61,6 +61,8 @@ extension ContentView {
       case .progess: return "Progress"
       case .asyncImageView: return "Async Image"
       case .viewHeight: return "View Height"
+      case .bottomSheet: return "Bottom Sheet"
+      case .customLayout: return "Layout"
       }
     }
     
@@ -109,6 +111,8 @@ extension ContentView {
       case .progess: CustomProgressView()
       case .asyncImageView: CustomAsyncImageView()
       case .viewHeight: CustomViewHeight()
+      case .bottomSheet: CustomBottomView()
+      case .customLayout: CustomLayoutView()
       }
     }
   }
