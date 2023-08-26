@@ -47,6 +47,7 @@
 		9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */; };
 		9D011A202A892AC4005990BB /* CustomGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1F2A892AC4005990BB /* CustomGestureView.swift */; };
 		9D011A222A892AE7005990BB /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A212A892AE7005990BB /* CustomProgressView.swift */; };
+		9D02583C2A9608B500725EC4 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02583B2A9608B500725EC4 /* CustomBottomView.swift */; };
 		9D5572622A8BA350007FB6BE /* CustomAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
@@ -96,6 +97,7 @@
 		9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupBoxView.swift; sourceTree = "<group>"; };
 		9D011A1F2A892AC4005990BB /* CustomGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGestureView.swift; sourceTree = "<group>"; };
 		9D011A212A892AE7005990BB /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		9D02583B2A9608B500725EC4 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
 		9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImageView.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				9D011A212A892AE7005990BB /* CustomProgressView.swift */,
 				9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */,
 				9DB644E72A91AFF000768230 /* CustomViewHeight.swift */,
+				9D02583B2A9608B500725EC4 /* CustomBottomView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				9D0119EA2A892695005990BB /* CustomDatePickerView.swift in Sources */,
 				9D0119DC2A892436005990BB /* CustomImageView.swift in Sources */,
 				9D011A102A892960005990BB /* CustomTimerView.swift in Sources */,
+				9D02583C2A9608B500725EC4 /* CustomBottomView.swift in Sources */,
 				9D011A002A89283B005990BB /* CustomSearchView.swift in Sources */,
 				9D0119F42A892756005990BB /* CustomScrollView.swift in Sources */,
 				9D0119D82A892367005990BB /* CustomTextFieldView.swift in Sources */,
