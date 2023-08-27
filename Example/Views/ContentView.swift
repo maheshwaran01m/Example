@@ -21,7 +21,7 @@ struct ContentView: View {
     NavigationStack {
       mainView
       .navigationTitle("SwiftUI")
-      .searchable(text: $searchText, placement: .navigationBarDrawer)
+      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
     }
   }
   
