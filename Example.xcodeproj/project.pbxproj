@@ -51,6 +51,8 @@
 		9D5572622A8BA350007FB6BE /* CustomAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */; };
 		9D9A00562A99AEBC001D65C8 /* CustomLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A00552A99AEBC001D65C8 /* CustomLayoutView.swift */; };
 		9D9A005B2A9A1E5A001D65C8 /* CustomPopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A005A2A9A1E5A001D65C8 /* CustomPopOverView.swift */; };
+		9D9A005E2A9AEEB4001D65C8 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A005D2A9AEEB4001D65C8 /* ViewModifiers.swift */; };
+		9D9A00602A9AEF84001D65C8 /* CustomPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A005F2A9AEF84001D65C8 /* CustomPreferenceKey.swift */; };
 		9DB44AF62A891F80003844A3 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF52A891F80003844A3 /* ExampleApp.swift */; };
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
@@ -103,6 +105,8 @@
 		9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImageView.swift; sourceTree = "<group>"; };
 		9D9A00552A99AEBC001D65C8 /* CustomLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutView.swift; sourceTree = "<group>"; };
 		9D9A005A2A9A1E5A001D65C8 /* CustomPopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopOverView.swift; sourceTree = "<group>"; };
+		9D9A005D2A9AEEB4001D65C8 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		9D9A005F2A9AEF84001D65C8 /* CustomPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreferenceKey.swift; sourceTree = "<group>"; };
 		9DB44AF22A891F80003844A3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB44AF52A891F80003844A3 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		9D0119D22A892214005990BB /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A005C2A9AEE9A001D65C8 /* ViewModifiers */,
 				9D0119D32A89222C005990BB /* ViewCoordinator.swift */,
 				9D0119D52A89229C005990BB /* CustomTextView.swift */,
 				9D0119D72A892367005990BB /* CustomTextFieldView.swift */,
@@ -181,6 +186,15 @@
 				9D9A005A2A9A1E5A001D65C8 /* CustomPopOverView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9D9A005C2A9AEE9A001D65C8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9D9A005D2A9AEEB4001D65C8 /* ViewModifiers.swift */,
+				9D9A005F2A9AEF84001D65C8 /* CustomPreferenceKey.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		9DA289A12A8920F100157409 /* MainResources */ = {
@@ -323,6 +337,7 @@
 				9D0119E82A892672005990BB /* CustomStepperView.swift in Sources */,
 				9D5572622A8BA350007FB6BE /* CustomAsyncImageView.swift in Sources */,
 				9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */,
+				9D9A005E2A9AEEB4001D65C8 /* ViewModifiers.swift in Sources */,
 				9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */,
 				9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */,
 				9D011A142A8929A8005990BB /* CustomFormView.swift in Sources */,
@@ -340,6 +355,7 @@
 				9D011A0E2A89293D005990BB /* CustomSegmentedControlView.swift in Sources */,
 				9D011A0C2A89291C005990BB /* CustomToggleView.swift in Sources */,
 				9D011A042A89288B005990BB /* CustomSafeAreaView.swift in Sources */,
+				9D9A00602A9AEF84001D65C8 /* CustomPreferenceKey.swift in Sources */,
 				9D0119EE2A8926E2005990BB /* CustomMoveItemView.swift in Sources */,
 				9D011A1A2A892A4C005990BB /* CustomOverlayView.swift in Sources */,
 				9D011A122A892985005990BB /* CustomLinkView.swift in Sources */,

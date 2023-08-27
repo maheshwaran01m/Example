@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomPopOverView: View {
+  
   var body: some View {
     customView
   }
@@ -19,10 +20,23 @@ struct CustomPopOverView: View {
       showingPopover.toggle()
     }
     .popover(isPresented: $showingPopover) {
-      Text("Your content here")
-        .font(.headline)
-        .padding()
+      examplePopOverView
     }
+  }
+  
+  @State private var height: CGFloat = .zero
+  
+  var examplePopOverView: some View {
+    VStack {
+      ForEach(0..<2) { _ in
+        Text("Your content here")
+          .font(.headline)
+          .padding()
+      }
+    }
+    .getHeight($height)
+    .presentationDetents([.height(height)])
+    .frame(maxWidth: .infinity)
   }
 }
 
