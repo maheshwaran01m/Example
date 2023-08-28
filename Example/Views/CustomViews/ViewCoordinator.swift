@@ -11,11 +11,11 @@ extension ContentView {
   
   enum ViewCoordinator: String, CaseIterable {
     case text, textFieldView, textEditorView, imageView, pickerView, stackView, colorView, gradientView,
-         buttonView, stepperView, datePickerView, photoPickerView, moveItemView, listView, scrollReaderView,
+         buttonView, stepperView, datePickerView, photoPickerView, videoPicker, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
          link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess, asyncImageView,
-         viewHeight, bottomSheet, customLayout, popOver, videoPicker
+         viewHeight, bottomSheet, customLayout, popOver
     
     
     var title: String {
@@ -32,6 +32,7 @@ extension ContentView {
       case .stepperView: return "Stepper"
       case .datePickerView: return "Date Picker"
       case .photoPickerView: return "Photo Picker"
+      case .videoPicker: return "Video Picker"
       case .moveItemView: return "Move Item"
       case .listView: return "List"
       case .scrollReaderView: return "Scroll Reader"
@@ -64,7 +65,6 @@ extension ContentView {
       case .bottomSheet: return "Bottom Sheet"
       case .customLayout: return "Layout"
       case .popOver: return "PopOver"
-      case .videoPicker: return "Video Picker"
       }
     }
     
@@ -84,6 +84,7 @@ extension ContentView {
       case .stepperView: CustomStepperView()
       case .datePickerView: CustomDatePickerView()
       case .photoPickerView: CustomPhotoPickerView()
+      case .videoPicker: CustomVideoPhotoPickerView()
       case .moveItemView: CustomMoveItemView()
       case .listView: CustomListView()
       case .scrollReaderView: CustomScrollReaderView()
@@ -116,7 +117,6 @@ extension ContentView {
       case .bottomSheet: CustomBottomView()
       case .customLayout: CustomLayoutView()
       case .popOver: CustomPopOverView()
-      case .videoPicker: CustomVideoPhotoPickerView()
       }
     }
   }
