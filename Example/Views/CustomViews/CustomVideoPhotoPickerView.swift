@@ -1,5 +1,5 @@
 //
-//  CustomCameraPhotoPickerView.swift
+//  CustomVideoPhotoPickerView.swift
 //  Example
 //
 //  Created by MAHESHWARAN on 27/08/23.
@@ -10,7 +10,7 @@ import AVFoundation
 import PhotosUI
 import AVKit
 
-struct CustomCameraPhotoPickerView: View {
+struct CustomVideoPhotoPickerView: View {
   
   @StateObject private var viewModel = AttachmentViewModel()
   
@@ -80,9 +80,9 @@ struct CustomCameraPhotoPickerView: View {
 }
 
 
-struct CustomCameraPhotoPickerView_Previews: PreviewProvider {
+struct CustomVideoPhotoPickerView_Previews: PreviewProvider {
   static var previews: some View {
-    CustomCameraPhotoPickerView()
+    CustomVideoPhotoPickerView()
   }
 }
 

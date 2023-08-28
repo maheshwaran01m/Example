@@ -116,7 +116,7 @@ extension ContentView {
       case .bottomSheet: CustomBottomView()
       case .customLayout: CustomLayoutView()
       case .popOver: CustomPopOverView()
-      case .camera: CustomCameraPhotoPickerView()
+      case .camera: CustomVideoPhotoPickerView()
       }
     }
   }
