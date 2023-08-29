@@ -59,6 +59,7 @@
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
 		9DB44AFD2A891F81003844A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */; };
 		9DB644E82A91AFF000768230 /* CustomViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB644E72A91AFF000768230 /* CustomViewHeight.swift */; };
+		9DEBC5472A9DA320009A5E08 /* CustomQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEBC5462A9DA320009A5E08 /* CustomQuickLookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		9DB44AF92A891F81003844A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DB644E72A91AFF000768230 /* CustomViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewHeight.swift; sourceTree = "<group>"; };
+		9DEBC5462A9DA320009A5E08 /* CustomQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomQuickLookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				9D02583B2A9608B500725EC4 /* CustomBottomView.swift */,
 				9D9A00552A99AEBC001D65C8 /* CustomLayoutView.swift */,
 				9D9A005A2A9A1E5A001D65C8 /* CustomPopOverView.swift */,
+				9DEBC5462A9DA320009A5E08 /* CustomQuickLookView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				9D9A00562A99AEBC001D65C8 /* CustomLayoutView.swift in Sources */,
 				9D0119FA2A8927CB005990BB /* CustomAnimationView.swift in Sources */,
 				9D0119E22A8925FE005990BB /* CustomColorView.swift in Sources */,
+				9DEBC5472A9DA320009A5E08 /* CustomQuickLookView.swift in Sources */,
 				9D011A0A2A8928F6005990BB /* CustomToolBarButtonView.swift in Sources */,
 				9D0119FC2A8927EF005990BB /* CustomBlurView.swift in Sources */,
 				9D011A062A8928AE005990BB /* CustomLoaderView.swift in Sources */,
