@@ -169,9 +169,9 @@ struct CustomListView: View {
       Text(String(describing: item))
         .listRowSeparator(.hidden)
         .listRowBackground(
-          LinearGradient(colors: [.white, .red], startPoint: .leading, endPoint: .trailing))
-        .padding(.vertical, 4)
-          
+          LinearGradient(colors: [.white, .red], startPoint: .leading, endPoint: .trailing)
+            .padding(.vertical, 4)
+        )   
     }
     .listStyle(.plain)
   }
