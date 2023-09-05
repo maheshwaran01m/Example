@@ -61,6 +61,7 @@
 		9DB644E82A91AFF000768230 /* CustomViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB644E72A91AFF000768230 /* CustomViewHeight.swift */; };
 		9DD6634F2AA0D1DD008A4816 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6634E2AA0D1DD008A4816 /* CustomMenuView.swift */; };
 		9DD663512AA1B185008A4816 /* CustomPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD663502AA1B185008A4816 /* CustomPropertyWrapper.swift */; };
+		9DE163BF2AA6C534007C9BF6 /* CustomNotificationObserverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE163BE2AA6C534007C9BF6 /* CustomNotificationObserverView.swift */; };
 		9DEBC5472A9DA320009A5E08 /* CustomQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEBC5462A9DA320009A5E08 /* CustomQuickLookView.swift */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,7 @@
 		9DB644E72A91AFF000768230 /* CustomViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewHeight.swift; sourceTree = "<group>"; };
 		9DD6634E2AA0D1DD008A4816 /* CustomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 		9DD663502AA1B185008A4816 /* CustomPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPropertyWrapper.swift; sourceTree = "<group>"; };
+		9DE163BE2AA6C534007C9BF6 /* CustomNotificationObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationObserverView.swift; sourceTree = "<group>"; };
 		9DEBC5462A9DA320009A5E08 /* CustomQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomQuickLookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 				9DEBC5462A9DA320009A5E08 /* CustomQuickLookView.swift */,
 				9DD6634E2AA0D1DD008A4816 /* CustomMenuView.swift */,
 				9DD663502AA1B185008A4816 /* CustomPropertyWrapper.swift */,
+				9DE163BE2AA6C534007C9BF6 /* CustomNotificationObserverView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				9D0119E82A892672005990BB /* CustomStepperView.swift in Sources */,
 				9D5572622A8BA350007FB6BE /* CustomAsyncImageView.swift in Sources */,
 				9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */,
+				9DE163BF2AA6C534007C9BF6 /* CustomNotificationObserverView.swift in Sources */,
 				9D9A005E2A9AEEB4001D65C8 /* ViewModifiers.swift in Sources */,
 				9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */,
 				9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */,
