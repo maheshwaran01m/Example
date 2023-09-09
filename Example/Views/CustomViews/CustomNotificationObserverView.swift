@@ -37,12 +37,8 @@ struct CustomNotificationObserverView_Previews: PreviewProvider {
 }
 
 class ExampleViewModel: ObservableObject {
-  @Published var example: String = "mahesh"
-  @Published var isPresented = false {
-    didSet {
-      print(isPresented)
-    }
-  }
+  @Published var example: String = "Example Data"
+  @Published var isPresented = false
 }
 
 struct ExampleView2: View {
