@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomBottomView: View {
   var body: some View {
-    BottomSheet {
+    BottomSheetView {
       Text("Hello, World!")
     }
   }
@@ -17,15 +17,15 @@ struct CustomBottomView: View {
 
 struct CustomBottomView_Previews: PreviewProvider {
   static var previews: some View {
-    BottomSheet {
-      CustomBottomView()
+    BottomSheetView {
+      Text("Hello, World!")
     }
   }
 }
 
 // MARK: - Bottom View
 
-public struct BottomSheet<Content: View>: View {
+public struct BottomSheetView<Content: View>: View {
   
   enum Style {
     case fullScreen, halfScreen, custom(CGFloat)
