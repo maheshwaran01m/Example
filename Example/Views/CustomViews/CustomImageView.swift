@@ -12,6 +12,7 @@ struct CustomImageView: View {
     TabView {
       customImageView
       systemImageView
+      multiImageColor
       colorMultiplyView
     }
     .tabViewStyle(.page)
@@ -37,6 +38,22 @@ struct CustomImageView: View {
       
       Image(systemName: "trash")
         .foregroundColor(.red)
+    }
+  }
+  
+  private var multiImageColor: some View {
+    HStack {
+      Image(systemName: "record.circle")
+        .resizable()
+        .symbolRenderingMode(.palette)
+        .foregroundStyle(.red, .black)
+        .frame(width: 40, height: 40)
+      
+      Image(systemName: "lasso.and.sparkles")
+        .resizable()
+        .symbolRenderingMode(.palette)
+        .foregroundStyle(.red, .black)
+        .frame(width: 40, height: 40)
     }
   }
 }
