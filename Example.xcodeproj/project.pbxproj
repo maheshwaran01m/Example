@@ -194,6 +194,7 @@
 				9D011A212A892AE7005990BB /* CustomProgressView.swift */,
 				9D5572612A8BA350007FB6BE /* CustomAsyncImageView.swift */,
 				9DB644E72A91AFF000768230 /* CustomViewHeight.swift */,
+				9D83AE5C2AB849FB007388A9 /* CustomSheetView.swift */,
 				9D02583B2A9608B500725EC4 /* CustomBottomView.swift */,
 				9D9A00552A99AEBC001D65C8 /* CustomLayoutView.swift */,
 				9D9A005A2A9A1E5A001D65C8 /* CustomPopOverView.swift */,
@@ -201,7 +202,6 @@
 				9DD6634E2AA0D1DD008A4816 /* CustomMenuView.swift */,
 				9DD663502AA1B185008A4816 /* CustomPropertyWrapper.swift */,
 				9DE163BE2AA6C534007C9BF6 /* CustomNotificationObserverView.swift */,
-				9D83AE5C2AB849FB007388A9 /* CustomSheetView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
