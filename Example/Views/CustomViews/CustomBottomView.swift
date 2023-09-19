@@ -82,6 +82,8 @@ public struct BottomSheet<Content: View>: View {
     .background(color)
     .clipShape(RoundedRectangle(cornerRadius: radius))
     .offset(y: max(translation.height + offsetY, 0))
+    .frame(height: proxy.size.height + proxy.safeAreaInsets.bottom,
+           alignment: .bottom)
     .gesture(dragGesture(proxy))
     .ignoresSafeArea(.container, edges: .bottom)
     .accessibilityElement(children: .contain)
@@ -123,7 +125,7 @@ extension View {
   @ViewBuilder
   func bottomSheet<Content: View>(
     isPresented: Binding<Bool>,
-    style: BottomSheet<Content>.Style = .halfScreen,
+    style: BottomSheet<Content>.Style = .custom(100),
     background color: Color = .pink.opacity(0.2),
     cornerRadius radius: CGFloat = 16,
     @ViewBuilder content: @escaping () -> Content) -> some View {
