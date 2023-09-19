@@ -62,7 +62,7 @@ public struct BottomSheetView<Content: View>: View {
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .background(color)
     .clipShape(RoundedRectangle(cornerRadius: radius))
-    .offset(y: translation.height + offsetY)
+    .offset(y: max(translation.height + offsetY, 0))
     .gesture(dragGesture(proxy))
     .ignoresSafeArea(.container, edges: .bottom)
     .accessibilityElement(children: .contain)
