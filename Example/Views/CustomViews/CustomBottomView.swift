@@ -59,7 +59,7 @@ public struct BottomSheetView<Content: View>: View {
       handleView
       content
     }
-    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     .background(color)
     .clipShape(RoundedRectangle(cornerRadius: radius))
     .offset(y: max(translation.height + offsetY, 0))
