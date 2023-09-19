@@ -8,24 +8,39 @@
 import SwiftUI
 
 struct CustomBottomView: View {
+  @State private var isPresented = false
+  
   var body: some View {
-    BottomSheetView {
-      Text("Hello, World!")
-    }
+    Text("Hello, World!")
+      .onTapGesture {
+        isPresented.toggle()
+      }
+      .bottomSheet(isPresented: $isPresented) {
+        Text("Sheet View")
+      }
+      .navigationBarTitleDisplayMode(.inline)
   }
 }
 
 struct CustomBottomView_Previews: PreviewProvider {
+  
+  
   static var previews: some View {
-    BottomSheetView {
-      Text("Hello, World!")
-    }
+    @State var isPresented = true
+    
+    Text("Hello, World!")
+      .onTapGesture {
+        isPresented.toggle()
+      }
+      .bottomSheet(isPresented: $isPresented) {
+        Text("Sheet View")
+      }
   }
 }
 
 // MARK: - Bottom View
 
-public struct BottomSheetView<Content: View>: View {
+public struct BottomSheet<Content: View>: View {
   
   enum Style {
     case fullScreen, halfScreen, custom(CGFloat)
@@ -33,8 +48,8 @@ public struct BottomSheetView<Content: View>: View {
   
   private let content: Content
   private var corners: UIRectCorner = .allCorners
-  private var radius: CGFloat = 16//0.0
-  private var style: Style = .halfScreen
+  private var radius: CGFloat
+  private var style: Style
   private var color: Color
   
   @State private var isPresented: Bool = false
@@ -42,9 +57,13 @@ public struct BottomSheetView<Content: View>: View {
   @State private var offsetY: CGFloat = .zero
   
   
-  init(color: Color = .gray.opacity(0.4),
-       @ViewBuilder _ content: @escaping () -> Content) {
+  init(style: Style = .halfScreen,
+       color: Color = .gray.opacity(0.4),
+       radius: CGFloat = 16.0,
+       @ViewBuilder content: @escaping () -> Content) {
+    self.style = style
     self.color = color
+    self.radius = radius
     self.content = content()
   }
   
@@ -59,7 +78,7 @@ public struct BottomSheetView<Content: View>: View {
       handleView
       content
     }
-    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+    .frame(maxWidth: proxy.size.width, maxHeight: proxy.size.height, alignment: .top)
     .background(color)
     .clipShape(RoundedRectangle(cornerRadius: radius))
     .offset(y: max(translation.height + offsetY, 0))
@@ -70,7 +89,7 @@ public struct BottomSheetView<Content: View>: View {
   
   private var handleView: some View {
     Rectangle()
-      .fill(Color.gray.opacity(0.3))
+      .fill(Color.gray.opacity(0.8))
       .cornerRadius(45)
       .frame(width: 68, height: 4)
       .padding(.top, 8)
@@ -97,4 +116,28 @@ public struct BottomSheetView<Content: View>: View {
         }
       }
   }
+}
+
+extension View {
+  
+  @ViewBuilder
+  func bottomSheet<Content: View>(
+    isPresented: Binding<Bool>,
+    style: BottomSheet<Content>.Style = .halfScreen,
+    background color: Color = .pink.opacity(0.2),
+    cornerRadius radius: CGFloat = 16,
+    @ViewBuilder content: @escaping () -> Content) -> some View {
+      
+      if isPresented.wrappedValue {
+        ZStack {
+          self
+            .onTapGesture {
+              isPresented.wrappedValue.toggle()
+            }
+          BottomSheet(style: style, color: color, radius: radius, content: content)
+        }
+      } else {
+        self
+      }
+    }
 }
