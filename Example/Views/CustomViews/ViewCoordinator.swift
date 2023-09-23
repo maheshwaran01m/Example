@@ -18,7 +18,6 @@ extension ContentView {
          viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
          toast
     
-    
     var title: String {
       switch self {
       case .text: return "Text"

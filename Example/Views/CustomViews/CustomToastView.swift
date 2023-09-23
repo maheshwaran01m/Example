@@ -24,7 +24,6 @@ struct CustomToastView: View {
   
   var toastBooleanView: some View {
     Text("Hello, World!")
-      
       .onTapGesture {
         isPresented.toggle()
       }
@@ -57,7 +56,6 @@ struct CustomToastView: View {
 
 public struct ToastView<V: View>: ViewModifier {
   
-  @Environment(\.dismiss) private var dismiss
   @Binding var isPresented: Bool
   @State private var timer: Timer?
   @State private var isActive = false
@@ -96,6 +94,7 @@ public struct ToastView<V: View>: ViewModifier {
             .modifier(ToastSide(isPresented: $isPresented, style: style))
         }
       }
+      .padding(.bottom, 5)
       .onTapGesture(perform: tapToDismiss)
       .onAppear(perform: setUpView)
       .onDisappear { isActive.toggle() }
@@ -125,7 +124,7 @@ public struct ToastView<V: View>: ViewModifier {
       timer?.invalidate()
       timer = nil
       isPresented = false
-      dismiss()
+      style.dismiss?()
     }
   }
   
@@ -151,18 +150,21 @@ public struct ToastView<V: View>: ViewModifier {
     public var animation: Animation?
     public var style: Style
     public var tapToDismiss: Bool
+    public var dismiss: (() -> Void)?
     
     public init(
       alignment: Alignment = .bottom,
       hide: TimeInterval? = 2.0,
       animation: Animation? = nil,
       tapToDismiss: Bool = true,
+      dismiss: (() -> Void)? = nil,
       style: Style = .slide) {
         self.alignment = alignment
         self.hide = hide
         self.animation = animation
         self.tapToDismiss = tapToDismiss
         self.style = style
+        self.dismiss = dismiss
       }
     
     static public let slide = ToastStyle(
