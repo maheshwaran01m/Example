@@ -15,7 +15,8 @@ extension ContentView {
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
          link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess, asyncImageView,
-         viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification
+         viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
+         toast
     
     
     var title: String {
@@ -70,6 +71,7 @@ extension ContentView {
       case .menu: return "Menu"
       case .propertyWrapper: return "Poperty Wrapper"
       case .notification: return "Notification"
+      case .toast: return "Toast"
       }
     }
     
@@ -127,6 +129,7 @@ extension ContentView {
       case .menu: CustomMenuView()
       case .propertyWrapper: CustomPropertyWrapper()
       case .notification: CustomNotificationObserverView()
+      case .toast: CustomToastView()
       }
     }
   }
