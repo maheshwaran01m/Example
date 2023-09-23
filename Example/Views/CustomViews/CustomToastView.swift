@@ -6,11 +6,23 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CustomToastView: View {
-  @State private var isPresented = false
   
   var body: some View {
+    TabView {
+      toastBooleanView
+      toastItemView
+    }
+    .tabViewStyle(.page(indexDisplayMode: .never))
+  }
+  
+  // MARK: - Toast Boolean
+  
+  @State private var isPresented = false
+  
+  var toastBooleanView: some View {
     Text("Hello, World!")
       
       .onTapGesture {
@@ -19,8 +31,21 @@ struct CustomToastView: View {
       .showToast($isPresented) {
         Text("Hello welcome to swiftUI toast")
           .padding()
-          .background(Capsule().foregroundColor(.gray.opacity(0.4)))
+          .background(Capsule().foregroundColor(.blue.opacity(0.4)))
       }
+  }
+  
+  
+  // MARK: - Toast Item
+  
+  @State private var toast: ToastMessage?
+  
+  private var toastItemView: some View {
+    Text("Hello, World!")
+      .onTapGesture {
+        toast = .init("Hello welcome to swiftUI toast")
+      }
+      .showToast($toast)
   }
 }
 
@@ -35,6 +60,8 @@ public struct ToastView<V: View>: ViewModifier {
   @Environment(\.dismiss) private var dismiss
   @Binding var isPresented: Bool
   @State private var timer: Timer?
+  @State private var isActive = false
+  @State private var currentState = false
   
   private let toastContent: V
   private let style: ToastStyle
@@ -71,11 +98,14 @@ public struct ToastView<V: View>: ViewModifier {
       }
       .onTapGesture(perform: tapToDismiss)
       .onAppear(perform: setUpView)
+      .onDisappear { isActive.toggle() }
+      .onReceive(Just(isPresented), perform: update)
     }
   }
   
   private func setUpView() {
     resetTimer()
+    isActive = true
   }
   
   private func resetTimer() {
@@ -103,6 +133,13 @@ public struct ToastView<V: View>: ViewModifier {
     if style.tapToDismiss {
       dismissToastView()
     }
+  }
+  
+  private func update(_ state: Bool) {
+    guard state != currentState else { return }
+    currentState = state
+    guard isActive, currentState else { return }
+    resetTimer()
   }
 }
   // MARK: - ToastOptions
@@ -209,4 +246,40 @@ public extension View {
     @ViewBuilder content: @escaping () -> V) -> some View {
       modifier(ToastView(isPresented, style: style, content: content))
     }
+  
+  func showToast<V: View, Item: Identifiable>(
+    _ item: Binding<Item?>?,
+    style: ToastStyle = .slide,
+    @ViewBuilder content: @escaping () -> V) -> some View {
+      let binding = Binding<Bool> {
+        item?.wrappedValue != nil
+      } set: { value in
+        if !value { item?.wrappedValue = nil }
+      }
+      return modifier(ToastView(binding, style: style, content: content))
+    }
+  
+  func showToast(_ item: Binding<ToastMessage?>) -> some View {
+    self.showToast(item) {
+      HStack {
+        Text(item.wrappedValue?.message ?? "")
+          .padding()
+          .background(
+            Capsule()
+              .foregroundStyle((item.wrappedValue?.style ?? .gray).opacity(0.3))
+          )
+      }
+    }
+  }
+}
+
+public struct ToastMessage: Identifiable, Equatable {
+  public var id: String = UUID().uuidString
+  public var message: String
+  public var style: Color
+  
+  public init(_ message: String, style: Color = .green) {
+    self.message = message
+    self.style = style
+  }
 }
