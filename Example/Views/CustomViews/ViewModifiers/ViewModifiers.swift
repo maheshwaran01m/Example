@@ -46,4 +46,35 @@ public extension View {
         }
     )
   }
+  
+  // MARK: - Overlay sheet
+  
+  @ViewBuilder
+  func overlaySheet<V: View>(isPresented: Binding<Bool>, @ViewBuilder content: () -> V) -> some View {
+    modifier(OverlaySheet(isPresented: isPresented, contentView: content))
+  }
+  
+  @ViewBuilder
+  func clearbackgroundView(
+    withColor color: Color,
+    isClicked: (() -> Void)? = nil) -> some View {
+      
+    if #available(iOS 16.4, *) {
+      self.presentationBackground {
+          color
+            .contentShape(Rectangle())
+            .onTapGesture {
+              isClicked?()
+            }
+        }
+    } else {
+      self.background(
+        BackgroundColorView(color: color)
+          .contentShape(Rectangle())
+          .onTapGesture {
+            isClicked?()
+          }
+      )
+    }
+  }
 }
