@@ -16,7 +16,7 @@ extension ContentView {
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
          link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess, asyncImageView,
          viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
-         toast, overlaySheet
+         toast, overlaySheet, navigation
     
     var title: String {
       switch self {
@@ -72,6 +72,7 @@ extension ContentView {
       case .notification: return "Notification"
       case .toast: return "Toast"
       case .overlaySheet: return "Sheet"
+      case .navigation: return "Navigation"
       }
     }
     
@@ -131,6 +132,7 @@ extension ContentView {
       case .notification: CustomNotificationObserverView()
       case .toast: CustomToastView()
       case .overlaySheet: CustomOverlaySheetView()
+      case .navigation: CustomNavigationView()
       }
     }
   }
