@@ -47,7 +47,8 @@ struct CustomTransitionView: View {
     } label: {
       Text(title)
       .padding()
-      .background(.blue.opacity(0.3))
+      .padding(.horizontal, 10)
+      .background(.blue.opacity(0.1))
       .clipShape(Capsule())
     }
   }
