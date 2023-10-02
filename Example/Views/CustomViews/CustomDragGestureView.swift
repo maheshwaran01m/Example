@@ -15,8 +15,8 @@ struct CustomDragGestureView: View {
   
   var body: some View {
     signUpView
-      .offset(y: startingOffsetY)
-      .offset(y: currentDragOffsetY)
+      .offset(y: max(startingOffsetY, 0))
+      .offset(y: max(currentDragOffsetY, 0))
       .offset(y: endingOffsetY)
       .gesture(dragGestureView)
   }
