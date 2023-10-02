@@ -14,9 +14,9 @@ extension ContentView {
          buttonView, stepperView, datePickerView, photoPickerView, videoPicker, moveItemView, listView, scrollReaderView,
          scrollView, matchedGeometryEffectView, alertView, animationView, blurView, dialogAlertView, searchView,
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
-         link, form, swipe, refresh, overlay, disclosureView, groupBox, dragGesture, progess, asyncImageView,
+         link, form, swipe, refresh, overlay, disclosureView, groupBox, gesture, progess, asyncImageView,
          viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
-         toast, overlaySheet, navigation, transition
+         toast, overlaySheet, navigation, transition, dragGesture
     
     var title: String {
       switch self {
@@ -58,7 +58,7 @@ extension ContentView {
       case .overlay: return "Overlay"
       case .disclosureView: return "Disclosure"
       case .groupBox: return "GroupBox"
-      case .dragGesture: return "Drag Gesture"
+      case .gesture: return "Gesture"
       case .progess: return "Progress"
       case .asyncImageView: return "Async Image"
       case .viewHeight: return "View Height"
@@ -74,6 +74,7 @@ extension ContentView {
       case .overlaySheet: return "Sheet"
       case .navigation: return "Navigation"
       case .transition: return "Transition"
+      case .dragGesture: return "Drag Gesture"
       }
     }
     
@@ -119,7 +120,7 @@ extension ContentView {
       case .overlay: CustomOverlayView()
       case .disclosureView: CustomDisclosureGroupView()
       case .groupBox: CustomGroupBoxView()
-      case .dragGesture: CustomGestureView()
+      case .gesture: CustomGestureView()
       case .progess: CustomProgressView()
       case .asyncImageView: CustomAsyncImageView()
       case .viewHeight: CustomViewHeight()
@@ -135,6 +136,7 @@ extension ContentView {
       case .overlaySheet: CustomOverlaySheetView()
       case .navigation: CustomNavigationView()
       case .transition: CustomTransitionView()
+      case .dragGesture: CustomDragGestureView()
       }
     }
   }
