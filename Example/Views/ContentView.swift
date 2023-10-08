@@ -30,7 +30,11 @@ struct ContentView: View {
      if !filterViews.isEmpty {
        listView
      } else {
-       placeholderView
+       if searchText.isEmpty {
+         placeholderView()
+       } else {
+         placeholderView(for: "No Search Result found")
+       }
      }
    }
   
@@ -54,24 +58,24 @@ struct ContentView: View {
   
   // MARK: - Placeholder View
     
-    private var placeholderView: some View {
+    private func placeholderView(for title: String = "") -> some View {
       ZStack {
         Color.secondary.opacity(0.1)
         VStack(spacing: 16) {
           iconView
-          titleView
+          titleView(for: title)
         }
       }
       .ignoresSafeArea(.container, edges: .bottom)
     }
     
-    private var titleView: some View {
-      Text("No Examples Available")
-        .font(.title3)
-        .frame(minHeight: 22)
-        .multilineTextAlignment(.center)
-        .foregroundStyle(.secondary)
-    }
+  private func titleView(for title: String = "No Examples Available") -> some View {
+    Text(title)
+      .font(.title3)
+      .frame(minHeight: 22)
+      .multilineTextAlignment(.center)
+      .foregroundStyle(.secondary)
+  }
     
     private var iconView: some View {
       Image(systemName: "square.on.square.badge.person.crop")
