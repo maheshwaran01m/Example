@@ -26,17 +26,13 @@ struct ContentView: View {
   }
   
   @ViewBuilder
-   private var mainView: some View {
-     if !filterViews.isEmpty {
-       listView
-     } else {
-       if searchText.isEmpty {
-         placeholderView()
-       } else {
-         placeholderView(for: "No Search Result found")
-       }
-     }
-   }
+  private var mainView: some View {
+    if !filterViews.isEmpty {
+      listView
+    } else {
+      placeholderView
+    }
+  }
   
   private var listView: some View {
     List(filterViews, id: \.rawValue) { item in
@@ -58,19 +54,19 @@ struct ContentView: View {
   
   // MARK: - Placeholder View
     
-    private func placeholderView(for title: String = "") -> some View {
-      ZStack {
-        Color.secondary.opacity(0.1)
-        VStack(spacing: 16) {
-          iconView
-          titleView(for: title)
-        }
+  private var placeholderView: some View {
+    ZStack {
+      Color.secondary.opacity(0.1)
+      VStack(spacing: 16) {
+        iconView
+        titleView
       }
-      .ignoresSafeArea(.container, edges: .bottom)
     }
+    .ignoresSafeArea(.container, edges: .bottom)
+  }
     
-  private func titleView(for title: String = "No Examples Available") -> some View {
-    Text(title)
+  private var titleView: some View {
+    Text("No Examples Available")
       .font(.title3)
       .frame(minHeight: 22)
       .multilineTextAlignment(.center)
