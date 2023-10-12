@@ -48,6 +48,7 @@
 		9D011A202A892AC4005990BB /* CustomGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1F2A892AC4005990BB /* CustomGestureView.swift */; };
 		9D011A222A892AE7005990BB /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A212A892AE7005990BB /* CustomProgressView.swift */; };
 		9D02583C2A9608B500725EC4 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02583B2A9608B500725EC4 /* CustomBottomView.swift */; };
+		9D19AC622AD7ED5B002B165B /* CustomObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */; };
 		9D25377F2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */; };
 		9D43758B2AC3B0F0009BE248 /* CustomOverlaySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */; };
 		9D43758D2AC3B480009BE248 /* OverlaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758C2AC3B480009BE248 /* OverlaySheet.swift */; };
@@ -114,6 +115,7 @@
 		9D011A1F2A892AC4005990BB /* CustomGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGestureView.swift; sourceTree = "<group>"; };
 		9D011A212A892AE7005990BB /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		9D02583B2A9608B500725EC4 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
+		9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservedObjectView.swift; sourceTree = "<group>"; };
 		9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPhotoPickerView.swift; sourceTree = "<group>"; };
 		9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlaySheetView.swift; sourceTree = "<group>"; };
 		9D43758C2AC3B480009BE248 /* OverlaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySheet.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				9D9809C92AC85BF50088625B /* CustomNavigationView.swift */,
 				9D86039A2AC908510049460E /* CustomTransitionView.swift */,
 				9D86039C2ACA7A640049460E /* CustomDragGestureView.swift */,
+				9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				9D9A005E2A9AEEB4001D65C8 /* ViewModifiers.swift in Sources */,
 				9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */,
 				9D0119F82A8927A8005990BB /* CustomAlertView.swift in Sources */,
+				9D19AC622AD7ED5B002B165B /* CustomObservedObjectView.swift in Sources */,
 				9D011A142A8929A8005990BB /* CustomFormView.swift in Sources */,
 				9D86039D2ACA7A640049460E /* CustomDragGestureView.swift in Sources */,
 				9D011A222A892AE7005990BB /* CustomProgressView.swift in Sources */,

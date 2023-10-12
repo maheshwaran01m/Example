@@ -36,12 +36,12 @@ struct CustomNotificationObserverView_Previews: PreviewProvider {
   }
 }
 
-class ExampleViewModel: ObservableObject {
+private class ExampleViewModel: ObservableObject {
   @Published var example: String = "Example Data"
   @Published var isPresented = false
 }
 
-struct ExampleView2: View {
+private struct ExampleView2: View {
   @Environment(\.dismiss) private var dismiss
   
   struct ExampleData {
