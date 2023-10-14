@@ -15,6 +15,7 @@ struct CustomObservedObjectView: View {
   var body: some View {
     VStack {
       Text(searchVM.searchText ?? "")
+        .bold()
       
       TextField("Enter", text: $viewModel.value)
         .textFieldStyle(.roundedBorder)
