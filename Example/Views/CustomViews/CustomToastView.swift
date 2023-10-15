@@ -13,7 +13,9 @@ struct CustomToastView: View {
   var body: some View {
     TabView {
       toastBooleanView
-      toastItemView
+      toastItemView()
+      toastItemView(.scale)
+      toastItemView(.fade)
     }
     .tabViewStyle(.page(indexDisplayMode: .never))
   }
@@ -39,12 +41,12 @@ struct CustomToastView: View {
   
   @State private var toast: ToastMessage?
   
-  private var toastItemView: some View {
+  private func toastItemView(_ style: ToastStyle = .slide) -> some View {
     Text("Hello, World!")
       .onTapGesture {
         toast = .init("Hello welcome to swiftUI toast")
       }
-      .showToast($toast)
+      .showToast($toast, style: style)
   }
 }
 
@@ -261,8 +263,9 @@ public extension View {
       return modifier(ToastView(binding, style: style, content: content))
     }
   
-  func showToast(_ item: Binding<ToastMessage?>) -> some View {
-    self.showToast(item) {
+  func showToast(_ item: Binding<ToastMessage?>,
+                 style: ToastStyle = .slide) -> some View {
+    self.showToast(item, style: style) {
       HStack {
         Text(item.wrappedValue?.message ?? "")
           .padding()
