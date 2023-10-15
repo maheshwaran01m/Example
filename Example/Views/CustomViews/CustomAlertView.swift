@@ -19,13 +19,13 @@ struct CustomAlertView: View {
   }
   
   // MARK: - Alert
-  @State private var showingAlert = false
+  @State private var showingAlert: String?
   
   var customAlertView: some View {
     Button("Show Alert") {
-      showingAlert = true
+      showingAlert = "Example alert"
     }
-    .alert("Important message", isPresented: $showingAlert) {
+    .alert("Important message", isPresented: .init($showingAlert)) {
       Button("Delete", role: .destructive) { }
       Button("Cancel", role: .cancel) { }
     }
