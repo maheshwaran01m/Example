@@ -15,15 +15,15 @@ struct CustomMatchedGeometryEffectView: View {
   var body: some View {
     VStack(spacing: 10) {
       HStack {
-        Rectangle()
+        RoundedRectangle(cornerRadius: 8)
           .matchedGeometryEffect(id: "effectView", in: showAnimation, isSource: true)
-          .frame(width: 100, height: 70)
+          .frame(width: 200, height: 170)
           .foregroundStyle(Color.blue.opacity(0.6))
         
-        Rectangle()
+        RoundedRectangle(cornerRadius: 8)
           .matchedGeometryEffect(id: canMerge ? "effectView" :  "", in: showAnimation, isSource: false)
-          .frame(width: 70, height: 50)
-          .foregroundStyle(Color.cyan.opacity(0.6))
+          .frame(width: 170, height: 150)
+          .foregroundStyle(Color.red.opacity(0.6))
       }
       
       Button("Match") {
