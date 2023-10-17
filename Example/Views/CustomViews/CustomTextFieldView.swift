@@ -70,9 +70,9 @@ struct CustomTextFieldView: View {
       .onChange(of: textValueTwo) { newValue in
         // Restrict mulitple dots
         let filtered = textValueTwo.filter { $0 == "." }
-        if filtered.count > 1, let firstIndex = textValueTwo.firstIndex(of: ".") {
+        if filtered.count > 1, let index = textValueTwo.firstIndex(of: ".") {
           textValueTwo.removeAll(where: { $0 == "." })
-          textValueTwo.insert(".", at: firstIndex)
+          textValueTwo.insert(".", at: index)
         } else {
           textValueTwo = newValue
         }
