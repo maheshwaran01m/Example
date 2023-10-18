@@ -26,8 +26,6 @@ struct CustomBindingView: View {
     }
   }
   
-  
-  
   @ViewBuilder
   var exampleBindingView: some View {
     if let bindingValue = Binding($textValue) {
