@@ -9,9 +9,18 @@ import SwiftUI
 
 struct CustomBindingView: View {
   
+  var body: some View {
+    TabView {
+      customBindingView
+      customAlertView
+    }
+    .tabViewStyle(.page)
+    .indexViewStyle(.page(backgroundDisplayMode: .never))
+  }
+  
   @State private var textValue: String?
   
-  var body: some View {
+  var customBindingView: some View {
     VStack {
       Text(textValue ?? "")
       exampleBindingView
@@ -33,6 +42,18 @@ struct CustomBindingView: View {
         .textFieldStyle(.roundedBorder)
         .keyboardType(.default)
         .submitLabel(.next)
+    }
+  }
+  
+  @State private var showingAlert: String?
+  
+  var customAlertView: some View {
+    Button("Show Alert") {
+      showingAlert = "Example alert"
+    }
+    .alert("Important message", isPresented: .init($showingAlert)) {
+      Button("Delete", role: .destructive) { }
+      Button("Cancel", role: .cancel) { }
     }
   }
 }
