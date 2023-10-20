@@ -47,6 +47,7 @@
 		9D011A1E2A892A9B005990BB /* CustomGroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */; };
 		9D011A202A892AC4005990BB /* CustomGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A1F2A892AC4005990BB /* CustomGestureView.swift */; };
 		9D011A222A892AE7005990BB /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D011A212A892AE7005990BB /* CustomProgressView.swift */; };
+		9D018D512AE211F6003B7211 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D018D502AE211F6003B7211 /* CustomGridView.swift */; };
 		9D02583C2A9608B500725EC4 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02583B2A9608B500725EC4 /* CustomBottomView.swift */; };
 		9D19AC622AD7ED5B002B165B /* CustomObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */; };
 		9D1F04652ADE3744007E487E /* CustomBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F04642ADE3744007E487E /* CustomBindingView.swift */; };
@@ -116,6 +117,7 @@
 		9D011A1D2A892A9B005990BB /* CustomGroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupBoxView.swift; sourceTree = "<group>"; };
 		9D011A1F2A892AC4005990BB /* CustomGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGestureView.swift; sourceTree = "<group>"; };
 		9D011A212A892AE7005990BB /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		9D018D502AE211F6003B7211 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
 		9D02583B2A9608B500725EC4 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
 		9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservedObjectView.swift; sourceTree = "<group>"; };
 		9D1F04642ADE3744007E487E /* CustomBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingView.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				9D86039C2ACA7A640049460E /* CustomDragGestureView.swift */,
 				9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */,
 				9D1F04642ADE3744007E487E /* CustomBindingView.swift */,
+				9D018D502AE211F6003B7211 /* CustomGridView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				9D0119E42A892621005990BB /* CustomGradientView.swift in Sources */,
 				9D0119FE2A892817005990BB /* CustomDialogAlertView.swift in Sources */,
 				9D0119DA2A8923B4005990BB /* CustomTextEditorView.swift in Sources */,
+				9D018D512AE211F6003B7211 /* CustomGridView.swift in Sources */,
 				9D0119F02A892707005990BB /* CustomListView.swift in Sources */,
 				9D011A202A892AC4005990BB /* CustomGestureView.swift in Sources */,
 				9D83AE5D2AB849FB007388A9 /* CustomSheetView.swift in Sources */,
