@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomImageView: View {
   var body: some View {
     TabView {
+      customImageColor
       customImageView
       systemImageView
       multiImageColor
@@ -54,6 +55,25 @@ struct CustomImageView: View {
         .symbolRenderingMode(.palette)
         .foregroundStyle(.red, .black)
         .frame(width: 40, height: 40)
+    }
+  }
+  
+  private var customImageColor: some View {
+    VStack {
+      Image(systemName: "heart")
+        .renderingMode(.template)
+        .font(.largeTitle)
+        .foregroundStyle(Color.green)
+      
+      Image(systemName: "moon.stars")
+        .renderingMode(.original)
+        .font(.largeTitle)
+        .foregroundStyle(Color.red)
+      
+      Image(systemName: "cloud.drizzle")
+        .renderingMode(.template)
+        .font(.largeTitle)
+        .foregroundStyle(Color.primary, Color.blue)
     }
   }
 }
