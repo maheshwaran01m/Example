@@ -13,6 +13,13 @@ protocol AlertView {
   var actions: AnyView { get }
 }
 
+extension AlertView {
+  
+  var actions: AnyView {
+    .init(Button("Ok"){ })
+  }
+}
+
 extension View {
   
   func alert<T: AlertView>(_ item: Binding<T?>) -> some View {
