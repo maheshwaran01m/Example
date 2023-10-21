@@ -11,6 +11,7 @@ struct CustomBlurView: View {
   
   var body: some View {
     TabView {
+      shadowView
       blurViewOne
       imageBlurView
     }
@@ -39,6 +40,20 @@ struct CustomBlurView: View {
         .resizable()
         .scaledToFit()
         .frame(width: 200, height: 200)
+    }
+  }
+  
+  private var shadowView: some View {
+    VStack(spacing: 80) {
+      RoundedRectangle(cornerRadius: 8)
+        .fill(Color.cyan)
+        .frame(width: 120, height: 100)
+        .shadow(color: .primary.opacity(0.7), radius: 5, x: 15, y: 20)
+      
+      RoundedRectangle(cornerRadius: 8)
+        .fill(Color.cyan)
+        .frame(width: 120, height: 100)
+        .shadow(color: .primary.opacity(0.7), radius: 5, x: -15, y: -20)
     }
   }
 }
