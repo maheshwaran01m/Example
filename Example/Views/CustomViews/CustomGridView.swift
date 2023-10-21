@@ -83,15 +83,23 @@ extension CustomGridView {
                        proposal: ProposedViewSize,
                        subviews: Subviews, cache: inout ()) {
       var origin = bounds.origin
-      
-      let maxWidth = proposal.width ?? 0
+      let maxWidth = bounds.width
       let rows = generateRows(
         maxWidth,
         proposal: proposal,
         subviews: subviews)
       
       for row in rows {
-        origin.x = 0
+        let leading = bounds.maxX - maxWidth
+        
+        let trailing = bounds.maxX - (row.reduce(CGFloat.zero) {
+          let width = $1.sizeThatFits(proposal).width
+          
+          return $0 + width + ($1 == row.last ? spacing : 0)
+        })
+        
+        let center = (leading + trailing) / 2
+        origin.x = (alignment == .leading ? leading : alignment == .trailing ? trailing : center)
         for view in row {
           let size = view.sizeThatFits(proposal)
           view.place(at: origin, proposal: proposal)
