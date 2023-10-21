@@ -13,6 +13,7 @@ struct CustomAlertView: View {
     TabView {
       textFieldAlertView
       customAlertView
+      customErrorView
     }
     .tabViewStyle(.page)
     .indexViewStyle(.page(backgroundDisplayMode: .always))
@@ -62,6 +63,34 @@ struct CustomAlertView: View {
     Button("four", role: .destructive, action: {})
       .buttonStyle(.plain)
       .foregroundColor(.red)
+  }
+  
+  // MARK: - Custom Error
+  
+  @State private var error: Error?
+  
+  enum CustomError: Error, LocalizedError {
+    case badURL
+    case custom(String)
+    
+    
+    var errorDescription: String? {
+      switch self {
+      case .badURL:
+        return "No Internet"
+      case .custom(let string):
+        return string
+      }
+    }
+  }
+  
+  private var customErrorView: some View {
+    Button("Custom Error Alert") {
+      error = CustomError.custom("Something went wrong")
+    }
+    .alert(error?.localizedDescription ?? "Important message", isPresented: .init($error)) {
+      Button("Ok") { }
+    }
   }
 }
 
