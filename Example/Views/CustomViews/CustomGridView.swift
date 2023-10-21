@@ -54,7 +54,6 @@ extension CustomGridView {
     var alignment = Alignment.center
     var spacing: CGFloat = 4
     
-    
     func sizeThatFits(proposal: ProposedViewSize,
                       subviews: Subviews,
                       cache: inout ()) -> CGSize {
