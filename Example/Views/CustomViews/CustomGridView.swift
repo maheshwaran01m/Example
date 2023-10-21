@@ -12,11 +12,12 @@ struct CustomGridView: View {
   @State private var records = (0...15).map { Item(title: "Value \($0)") }
   
   var body: some View {
-    TagLayout(spacing: 4) {
+    TagLayout(alignment: .leading, spacing: 4) {
       ForEach(records.indices, id: \.self) { index in
         chipView(for: index)
       }
     }
+    .padding(10)
   }
   
   func chipView(for index: Int) -> some View {
