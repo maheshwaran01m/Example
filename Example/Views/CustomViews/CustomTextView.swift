@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomTextView: View {
+  
   var body: some View {
     VStack {
       titleView
