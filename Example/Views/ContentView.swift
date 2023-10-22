@@ -20,8 +20,8 @@ struct ContentView: View {
   var body: some View {
     NavigationStack {
       mainView
-      .navigationTitle("SwiftUI")
-      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+        .navigationTitle("SwiftUI")
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
     }
   }
   
@@ -53,7 +53,7 @@ struct ContentView: View {
   }
   
   // MARK: - Placeholder View
-    
+  
   private var placeholderView: some View {
     ZStack {
       Color.secondary.opacity(0.1)
@@ -64,7 +64,7 @@ struct ContentView: View {
     }
     .ignoresSafeArea(.container, edges: .bottom)
   }
-    
+  
   private var titleView: some View {
     Text("No Examples Available")
       .font(.title3)
@@ -72,13 +72,13 @@ struct ContentView: View {
       .multilineTextAlignment(.center)
       .foregroundStyle(.secondary)
   }
-    
-    private var iconView: some View {
-      Image(systemName: "square.on.square.badge.person.crop")
-        .font(.title)
-        .foregroundStyle(Color.secondary)
-        .frame(minWidth: 20, minHeight: 20)
-    }
+  
+  private var iconView: some View {
+    Image(systemName: "square.on.square.badge.person.crop")
+      .font(.title)
+      .foregroundStyle(Color.secondary)
+      .frame(minWidth: 20, minHeight: 20)
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
