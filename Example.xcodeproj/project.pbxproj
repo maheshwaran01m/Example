@@ -53,6 +53,8 @@
 		9D1F04652ADE3744007E487E /* CustomBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F04642ADE3744007E487E /* CustomBindingView.swift */; };
 		9D25377F2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */; };
 		9D34253A2AE6AB6000091558 /* CustomMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3425392AE6AB6000091558 /* CustomMaskView.swift */; };
+		9D34253C2AE6AFB700091558 /* CustomAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34253B2AE6AFB700091558 /* CustomAudioView.swift */; };
+		9D34253F2AE6B19B00091558 /* Ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D34253E2AE6B19B00091558 /* Ding.mp3 */; };
 		9D43758B2AC3B0F0009BE248 /* CustomOverlaySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */; };
 		9D43758D2AC3B480009BE248 /* OverlaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758C2AC3B480009BE248 /* OverlaySheet.swift */; };
 		9D4C52E62ABE805300025D3B /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C52E52ABE805300025D3B /* CustomToastView.swift */; };
@@ -126,6 +128,8 @@
 		9D1F04642ADE3744007E487E /* CustomBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingView.swift; sourceTree = "<group>"; };
 		9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPhotoPickerView.swift; sourceTree = "<group>"; };
 		9D3425392AE6AB6000091558 /* CustomMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMaskView.swift; sourceTree = "<group>"; };
+		9D34253B2AE6AFB700091558 /* CustomAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioView.swift; sourceTree = "<group>"; };
+		9D34253E2AE6B19B00091558 /* Ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ding.mp3; sourceTree = "<group>"; };
 		9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlaySheetView.swift; sourceTree = "<group>"; };
 		9D43758C2AC3B480009BE248 /* OverlaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySheet.swift; sourceTree = "<group>"; };
 		9D4C52E52ABE805300025D3B /* CustomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
@@ -237,8 +241,17 @@
 				9D1F04642ADE3744007E487E /* CustomBindingView.swift */,
 				9D018D502AE211F6003B7211 /* CustomGridView.swift */,
 				9D3425392AE6AB6000091558 /* CustomMaskView.swift */,
+				9D34253B2AE6AFB700091558 /* CustomAudioView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9D34253D2AE6B19100091558 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9D34253E2AE6B19B00091558 /* Ding.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		9D9A005C2A9AEE9A001D65C8 /* ViewModifiers */ = {
@@ -259,6 +272,7 @@
 			children = (
 				9DB44AF52A891F80003844A3 /* ExampleApp.swift */,
 				9DB44AF92A891F81003844A3 /* Assets.xcassets */,
+				9D34253D2AE6B19100091558 /* Sounds */,
 				9DB44AFB2A891F81003844A3 /* Preview Content */,
 			);
 			path = MainResources;
@@ -355,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D34253F2AE6B19B00091558 /* Ding.mp3 in Resources */,
 				9DB44AFD2A891F81003844A3 /* Preview Assets.xcassets in Resources */,
 				9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */,
 			);
@@ -401,6 +416,7 @@
 				9D5572622A8BA350007FB6BE /* CustomAsyncImageView.swift in Sources */,
 				9D43758B2AC3B0F0009BE248 /* CustomOverlaySheetView.swift in Sources */,
 				9D34253A2AE6AB6000091558 /* CustomMaskView.swift in Sources */,
+				9D34253C2AE6AFB700091558 /* CustomAudioView.swift in Sources */,
 				9D9BA9C42AE3B28500717B22 /* AlertExtensions.swift in Sources */,
 				9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */,
 				9DE163BF2AA6C534007C9BF6 /* CustomNotificationObserverView.swift in Sources */,
