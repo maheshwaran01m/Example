@@ -16,6 +16,7 @@ struct CustomGestureView: View {
       highPriorityGesture
       simultaneousGesture
       dragGestureView
+      rotationGesture
     }
     .tabViewStyle(.page)
     .indexViewStyle(.page(backgroundDisplayMode: .always))
@@ -101,6 +102,26 @@ struct CustomGestureView: View {
           .onEnded { _ in
             withAnimation(.spring()) {
               dragAmount = .zero
+            }
+          }
+      )
+  }
+  
+  // MARK: - Rotation Gesture
+  
+  @State private var rotationAngle = Angle(degrees: 0)
+  
+  var rotationGesture: some View {
+    Text("Rotation Gesture")
+      .padding()
+      .background(Color.blue.clipShape(RoundedRectangle(cornerRadius: 20)))
+      .shadow(color: .black.opacity(0.3), radius: 5 , x: 0, y: 5)
+      .gesture(
+        RotationGesture()
+          .onChanged { rotationAngle = $0 }
+          .onEnded { value in
+            withAnimation(.spring()) {
+              rotationAngle = .degrees(0)
             }
           }
       )
