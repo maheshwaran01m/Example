@@ -52,6 +52,7 @@
 		9D19AC622AD7ED5B002B165B /* CustomObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */; };
 		9D1F04652ADE3744007E487E /* CustomBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F04642ADE3744007E487E /* CustomBindingView.swift */; };
 		9D25377F2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */; };
+		9D34253A2AE6AB6000091558 /* CustomMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3425392AE6AB6000091558 /* CustomMaskView.swift */; };
 		9D43758B2AC3B0F0009BE248 /* CustomOverlaySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */; };
 		9D43758D2AC3B480009BE248 /* OverlaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758C2AC3B480009BE248 /* OverlaySheet.swift */; };
 		9D4C52E62ABE805300025D3B /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C52E52ABE805300025D3B /* CustomToastView.swift */; };
@@ -124,6 +125,7 @@
 		9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservedObjectView.swift; sourceTree = "<group>"; };
 		9D1F04642ADE3744007E487E /* CustomBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingView.swift; sourceTree = "<group>"; };
 		9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPhotoPickerView.swift; sourceTree = "<group>"; };
+		9D3425392AE6AB6000091558 /* CustomMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMaskView.swift; sourceTree = "<group>"; };
 		9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlaySheetView.swift; sourceTree = "<group>"; };
 		9D43758C2AC3B480009BE248 /* OverlaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySheet.swift; sourceTree = "<group>"; };
 		9D4C52E52ABE805300025D3B /* CustomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */,
 				9D1F04642ADE3744007E487E /* CustomBindingView.swift */,
 				9D018D502AE211F6003B7211 /* CustomGridView.swift */,
+				9D3425392AE6AB6000091558 /* CustomMaskView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				9D0119E82A892672005990BB /* CustomStepperView.swift in Sources */,
 				9D5572622A8BA350007FB6BE /* CustomAsyncImageView.swift in Sources */,
 				9D43758B2AC3B0F0009BE248 /* CustomOverlaySheetView.swift in Sources */,
+				9D34253A2AE6AB6000091558 /* CustomMaskView.swift in Sources */,
 				9D9BA9C42AE3B28500717B22 /* AlertExtensions.swift in Sources */,
 				9D0119E02A8925D9005990BB /* CustomStackView.swift in Sources */,
 				9DE163BF2AA6C534007C9BF6 /* CustomNotificationObserverView.swift in Sources */,
