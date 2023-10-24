@@ -9,9 +9,19 @@ import SwiftUI
 
 struct CustomPreferenceKeyView: View {
   
+  var body: some View {
+    TabView {
+      customSizeView
+      customTitleView
+        .tabViewStyle(.page)
+    }
+    .indexViewStyle(.page)
+  }
+  
+  // MARK: - Custom Title
   @State private var textValue = "Hello World"
   
-  var body: some View {
+  var customTitleView: some View {
     VStack {
       SecondView(textValue)
     }
@@ -39,6 +49,49 @@ struct CustomPreferenceKeyView: View {
     static var defaultValue: String = ""
     
     static func reduce(value: inout String, nextValue: () -> String) {
+      value = nextValue()
+    }
+  }
+  
+  // MARK: - Custom Size
+  
+  @State private var customSize = CGSize.zero
+  
+  var customSizeView: some View {
+    VStack(spacing: 20) {
+      Text("Hello World")
+        .frame(width: customSize.width, height: customSize.height)
+        .background(Color.blue.opacity(0.3))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+      
+      rectangleView
+    }
+    .onPreferenceChange(SizePreferenceKey.self) { customSize = $0 }
+  }
+  
+  private var rectangleView: some View {
+    HStack {
+      Rectangle()
+      
+      GeometryReader { proxy in
+        Rectangle()
+          .clipShape(RoundedRectangle(cornerRadius: 8))
+          .preference(key: SizePreferenceKey.self, value: proxy.size)
+      }
+      
+      Rectangle()
+    }
+    .frame(height: 55)
+  }
+  
+  
+  // MARK: - SizePreferenceKey
+  
+  struct SizePreferenceKey: PreferenceKey {
+    
+    static var defaultValue = CGSize.zero
+    
+    static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
       value = nextValue()
     }
   }
