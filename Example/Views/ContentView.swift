@@ -57,6 +57,7 @@ struct ContentView: View {
   private var placeholderView: some View {
     ZStack {
       Color.secondary.opacity(0.1)
+      
       VStack(spacing: 16) {
         iconView
         titleView
