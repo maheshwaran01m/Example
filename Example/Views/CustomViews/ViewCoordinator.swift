@@ -16,7 +16,8 @@ extension ContentView {
          tabView, safeAreaView, loaderView, colorPickerView, toolBarView, toggleView, segmentedControlView, timer,
          link, form, swipe, refresh, overlay, disclosureView, groupBox, gesture, progess, asyncImageView,
          viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
-         toast, overlaySheet, navigation, transition, dragGesture, observedObjectView, binding, grid, mask, audio
+         toast, overlaySheet, navigation, transition, dragGesture, observedObjectView, binding, grid, mask, audio,
+         imageCache
     
     var title: String {
       switch self {
@@ -80,6 +81,7 @@ extension ContentView {
       case .grid: return "Grid"
       case .mask: return "Mask"
       case .audio: return "Audio"
+      case .imageCache: return "Image Cache"
       }
     }
     
@@ -147,6 +149,7 @@ extension ContentView {
       case .grid: CustomGridView()
       case .mask: CustomMaskView()
       case .audio: CustomAudioView()
+      case .imageCache: CustomImageCacheView()
       }
     }
   }

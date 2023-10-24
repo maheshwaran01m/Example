@@ -55,6 +55,7 @@
 		9D34253A2AE6AB6000091558 /* CustomMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3425392AE6AB6000091558 /* CustomMaskView.swift */; };
 		9D34253C2AE6AFB700091558 /* CustomAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34253B2AE6AFB700091558 /* CustomAudioView.swift */; };
 		9D34253F2AE6B19B00091558 /* Ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D34253E2AE6B19B00091558 /* Ding.mp3 */; };
+		9D3425412AE7C47E00091558 /* CustomImageCacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3425402AE7C47E00091558 /* CustomImageCacheView.swift */; };
 		9D43758B2AC3B0F0009BE248 /* CustomOverlaySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */; };
 		9D43758D2AC3B480009BE248 /* OverlaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43758C2AC3B480009BE248 /* OverlaySheet.swift */; };
 		9D4C52E62ABE805300025D3B /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C52E52ABE805300025D3B /* CustomToastView.swift */; };
@@ -130,6 +131,7 @@
 		9D3425392AE6AB6000091558 /* CustomMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMaskView.swift; sourceTree = "<group>"; };
 		9D34253B2AE6AFB700091558 /* CustomAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioView.swift; sourceTree = "<group>"; };
 		9D34253E2AE6B19B00091558 /* Ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ding.mp3; sourceTree = "<group>"; };
+		9D3425402AE7C47E00091558 /* CustomImageCacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageCacheView.swift; sourceTree = "<group>"; };
 		9D43758A2AC3B0F0009BE248 /* CustomOverlaySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlaySheetView.swift; sourceTree = "<group>"; };
 		9D43758C2AC3B480009BE248 /* OverlaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySheet.swift; sourceTree = "<group>"; };
 		9D4C52E52ABE805300025D3B /* CustomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				9D018D502AE211F6003B7211 /* CustomGridView.swift */,
 				9D3425392AE6AB6000091558 /* CustomMaskView.swift */,
 				9D34253B2AE6AFB700091558 /* CustomAudioView.swift */,
+				9D3425402AE7C47E00091558 /* CustomImageCacheView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				9DDF4F7B2ADC233F00CF8DE0 /* ViewExtensions.swift in Sources */,
 				9D02583C2A9608B500725EC4 /* CustomBottomView.swift in Sources */,
 				9D011A002A89283B005990BB /* CustomSearchView.swift in Sources */,
+				9D3425412AE7C47E00091558 /* CustomImageCacheView.swift in Sources */,
 				9D0119F42A892756005990BB /* CustomScrollView.swift in Sources */,
 				9D0119D82A892367005990BB /* CustomTextFieldView.swift in Sources */,
 				9D0119F22A89272D005990BB /* CustomScrollReaderView.swift in Sources */,
