@@ -17,7 +17,7 @@ extension ContentView {
          link, form, swipe, refresh, overlay, disclosureView, groupBox, gesture, progess, asyncImageView,
          viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
          toast, overlaySheet, navigation, transition, dragGesture, observedObjectView, binding, grid, mask, audio,
-         imageCache
+         imageCache, preferenceKey
     
     var title: String {
       switch self {
@@ -82,6 +82,7 @@ extension ContentView {
       case .mask: return "Mask"
       case .audio: return "Audio"
       case .imageCache: return "Image Cache"
+      case .preferenceKey: return "Preference Key"
       }
     }
     
@@ -150,6 +151,7 @@ extension ContentView {
       case .mask: CustomMaskView()
       case .audio: CustomAudioView()
       case .imageCache: CustomImageCacheView()
+      case .preferenceKey: CustomPreferenceKeyView()
       }
     }
   }
