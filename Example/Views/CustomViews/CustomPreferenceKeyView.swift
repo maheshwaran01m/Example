@@ -78,7 +78,6 @@ struct CustomPreferenceKeyView: View {
           .clipShape(RoundedRectangle(cornerRadius: 8))
           .preference(key: SizePreferenceKey.self, value: proxy.size)
       }
-      
       Rectangle()
     }
     .frame(height: 55)
@@ -88,7 +87,6 @@ struct CustomPreferenceKeyView: View {
   // MARK: - SizePreferenceKey
   
   struct SizePreferenceKey: PreferenceKey {
-    
     static var defaultValue = CGSize.zero
     
     static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
