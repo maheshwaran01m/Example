@@ -25,7 +25,6 @@ struct CustomGridView: View {
       .padding(10)
       .background(records[index].color.opacity(0.3))
       .clipShape(Capsule())
-    
       .onTapGesture {
         if records[index].title == "Example Value \(index)" {
           records[index].title = "Value \(index)"
