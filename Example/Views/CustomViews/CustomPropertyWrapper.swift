@@ -181,11 +181,12 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
       
       let data = try Data(contentsOf: filePath)
       let value = try JSONDecoder().decode(T.self, from: data)
-      currentPublisher = .init(value)
+      
+      publisher = .init(value)
       _value = .init(initialValue: value)
     } catch {
       print("Error while reading document, reason: \(error.localizedDescription)")
-      currentPublisher = .init(nil)
+      publisher = .init(nil)
       _value = .init(initialValue: wrappedValue ?? nil)
     }
   }
@@ -198,11 +199,12 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
       
       let data = try Data(contentsOf: filePath)
       let value = try JSONDecoder().decode(T.self, from: data)
-      currentPublisher = .init(value)
+      
+      publisher = .init(value)
       _value = .init(initialValue: value)
     } catch {
       print("Error while reading document, reason: \(error.localizedDescription)")
-      currentPublisher = .init(nil)
+      publisher = .init(nil)
       _value = .init(initialValue: wrappedValue ?? nil)
     }
   }
@@ -227,7 +229,7 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
       
       try data.write(to: filePath)
       value = newValue
-      currentPublisher.send(value)
+      publisher.send(value)
     } catch {
       print("Error while saving document, reason: \(error.localizedDescription)")
     }
@@ -235,29 +237,24 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
   
   // MARK: - Combine
   
-  private let currentPublisher: CurrentValueSubject<T?, Never>
-  
-  public var publisher: CurrentValueSubject<T?, Never> {
-    currentPublisher
-  }
+  private let publisher: CurrentValueSubject<T?, Never>
   
   public var stream: AsyncPublisher<CurrentValueSubject<T?, Never>> {
-    currentPublisher.values
+    publisher.values
   }
   
+  struct ProjectedValue<K: Codable> {
+    let binding: Binding<K?>
+    let publisher: CurrentValueSubject<K?, Never>
+    
+    var stream: AsyncPublisher<CurrentValueSubject<K?, Never>> {
+      publisher.values
+    }
+  }
+   
   /*
-   struct ProjectedValue<K: Codable> {
-   let binding: Binding<K?>
-   let publisher: CurrentValueSubject<K?, Never>
-   
-   var stream: AsyncPublisher<CurrentValueSubject<K?, Never>> {
-   publisher.values
-   }
-   }
-   
    var projectedValue: ProjectedValue<T> {
-   .init(binding: .init { wrappedValue } set: { wrappedValue = $0 },
-   publisher: currentPublisher)
+   .init(binding: .init { wrappedValue } set: { wrappedValue = $0 }, publisher: publisher)
    }
    */
 }
