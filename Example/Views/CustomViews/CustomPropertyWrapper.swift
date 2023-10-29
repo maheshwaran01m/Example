@@ -237,7 +237,7 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
   
   // MARK: - Combine
   
-  private let publisher: CurrentValueSubject<T?, Never>
+  public var publisher: CurrentValueSubject<T?, Never>
   
   public var stream: AsyncPublisher<CurrentValueSubject<T?, Never>> {
     publisher.values
