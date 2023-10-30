@@ -191,8 +191,8 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
     }
   }
   
-  init(_ key: KeyPath<FileValues, FileKeyPath<T>>) {
-    self.key = FileManagerProperty<T>.FileValues()[keyPath: key].key
+  init(_ keyPath: KeyPath<FileValues, FileKeyPath<T>>) {
+    self.key = FileManagerProperty<T>.FileValues()[keyPath: keyPath].key
     
     do {
       let filePath = URL.documentsDirectory.appending(path: "\(key).txt")
