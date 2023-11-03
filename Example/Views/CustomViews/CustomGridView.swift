@@ -50,7 +50,6 @@ extension CustomGridView {
   }
   
   struct TagLayout: Layout {
-    
     var alignment = Alignment.center
     var spacing: CGFloat = 4
     
