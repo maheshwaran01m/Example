@@ -36,22 +36,25 @@ struct CustomNotificationObserverView_Previews: PreviewProvider {
   }
 }
 
-private class ExampleViewModel: ObservableObject {
-  @Published var example: String = "Example Data"
-  @Published var isPresented = false
-}
+extension CustomNotificationObserverView {
 
-private struct ExampleView2: View {
-  @Environment(\.dismiss) private var dismiss
-  
-  struct ExampleData {
-    let title = "example data"
+  private class ExampleViewModel: ObservableObject {
+    @Published var example: String = "Example Data"
+    @Published var isPresented = false
   }
   
-  var body: some View {
-    Button ("Change") {
-      NotificationCenter.default.post(name: .showAttachmentFileNameAlert, object: ExampleData())
-      dismiss()
+  private struct ExampleView2: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    struct ExampleData {
+      let title = "example data"
+    }
+    
+    var body: some View {
+      Button ("Change") {
+        NotificationCenter.default.post(name: .showAttachmentFileNameAlert, object: ExampleData())
+        dismiss()
+      }
     }
   }
 }
