@@ -51,6 +51,7 @@
 		9D02583C2A9608B500725EC4 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02583B2A9608B500725EC4 /* CustomBottomView.swift */; };
 		9D19AC622AD7ED5B002B165B /* CustomObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */; };
 		9D1F04652ADE3744007E487E /* CustomBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F04642ADE3744007E487E /* CustomBindingView.swift */; };
+		9D229FB62AF4E156005435B9 /* CustomNavigationTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D229FB52AF4E156005435B9 /* CustomNavigationTransitionView.swift */; };
 		9D25377F2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */; };
 		9D34253A2AE6AB6000091558 /* CustomMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3425392AE6AB6000091558 /* CustomMaskView.swift */; };
 		9D34253C2AE6AFB700091558 /* CustomAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34253B2AE6AFB700091558 /* CustomAudioView.swift */; };
@@ -128,6 +129,7 @@
 		9D02583B2A9608B500725EC4 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
 		9D19AC612AD7ED5B002B165B /* CustomObservedObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservedObjectView.swift; sourceTree = "<group>"; };
 		9D1F04642ADE3744007E487E /* CustomBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingView.swift; sourceTree = "<group>"; };
+		9D229FB52AF4E156005435B9 /* CustomNavigationTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTransitionView.swift; sourceTree = "<group>"; };
 		9D25377E2A9B5E0E009D23A7 /* CustomVideoPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPhotoPickerView.swift; sourceTree = "<group>"; };
 		9D3425392AE6AB6000091558 /* CustomMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMaskView.swift; sourceTree = "<group>"; };
 		9D34253B2AE6AFB700091558 /* CustomAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioView.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				9D34253B2AE6AFB700091558 /* CustomAudioView.swift */,
 				9D3425402AE7C47E00091558 /* CustomImageCacheView.swift */,
 				9D3425422AE7E19C00091558 /* CustomPreferenceKeyView.swift */,
+				9D229FB52AF4E156005435B9 /* CustomNavigationTransitionView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				9D9BA9C22AE3A55100717B22 /* ArrayExtensions.swift in Sources */,
 				9D018D512AE211F6003B7211 /* CustomGridView.swift in Sources */,
 				9D0119F02A892707005990BB /* CustomListView.swift in Sources */,
+				9D229FB62AF4E156005435B9 /* CustomNavigationTransitionView.swift in Sources */,
 				9D011A202A892AC4005990BB /* CustomGestureView.swift in Sources */,
 				9D83AE5D2AB849FB007388A9 /* CustomSheetView.swift in Sources */,
 				9D011A162A8929D2005990BB /* CustomSwipeActionView.swift in Sources */,
