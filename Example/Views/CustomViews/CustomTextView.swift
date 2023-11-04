@@ -11,6 +11,7 @@ struct CustomTextView: View {
   
   var body: some View {
     TabView {
+      
       VStack {
         titleView
         titleViewOne
@@ -19,6 +20,7 @@ struct CustomTextView: View {
         rectangleView
         roundedRectangleView
       }
+      roundRectangleViewTwo
     }
     .tabViewStyle(.page)
   }
@@ -64,6 +66,19 @@ struct CustomTextView: View {
             dashPhase: 210) // -110
           )
       ) // 320*4 = 1280 -> [65*4 + 255*4]
+  }
+  
+  private var roundRectangleViewTwo: some View {
+    ZStack {
+      ForEach(0...3, id: \.self) { index in
+        RoundedRectangle(cornerRadius: 16, style: .circular)
+          .trim(from: 0.58, to: 0.66)
+          .stroke(Color.primary,
+                  style: .init(lineWidth: 2, lineCap: .round, lineJoin: .round))
+          .rotationEffect(.init(degrees: Double(index) * 90))
+      }
+    }
+    .frame(width: 320, height: 320)
   }
 }
 
