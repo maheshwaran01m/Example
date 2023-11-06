@@ -11,11 +11,12 @@ struct CustomPreferenceKeyView: View {
   
   var body: some View {
     TabView {
+      framePreferenceKeyView
       customSizeView
       customTitleView
-        .tabViewStyle(.page)
     }
-    .indexViewStyle(.page)
+    .tabViewStyle(.page)
+    .indexViewStyle(.page(backgroundDisplayMode: .always))
   }
   
   // MARK: - Custom Title
@@ -90,6 +91,40 @@ struct CustomPreferenceKeyView: View {
     static var defaultValue = CGSize.zero
     
     static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
+      value = nextValue()
+    }
+  }
+  
+  // MARK: - Frame Preference Key
+  
+  @State private var framePreferenceValue: String?
+  
+  var framePreferenceKeyView: some View {
+    Text("Content")
+      .frame(width: 320, height: 320)
+      .background(backgroundView)
+      .overlay(alignment: .bottom, content: frameOverlayView)
+  }
+  
+  private var backgroundView: some View {
+    GeometryReader {
+      Color.clear
+        .preference(key: FramePreferenceKey.self, value: $0.frame(in: .global))
+        .onPreferenceChange(FramePreferenceKey.self) {
+          framePreferenceValue = "X: \($0.minX), Y: \($0.minY), \nWidth: \($0.width), Height: \($0.height)"
+          print("Rect: \($0)")
+        }
+    }
+  }
+  
+  private func frameOverlayView() -> some View {
+    Text(framePreferenceValue ?? "")
+  }
+  
+  struct FramePreferenceKey: PreferenceKey {
+    static var defaultValue = CGRect.zero
+    
+    static func reduce(value: inout CGRect, nextValue: () -> CGRect) {
       value = nextValue()
     }
   }
