@@ -11,7 +11,6 @@ struct CustomTextView: View {
   
   var body: some View {
     TabView {
-      
       VStack {
         titleView
         titleViewOne
