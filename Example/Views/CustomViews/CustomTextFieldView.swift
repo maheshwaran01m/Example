@@ -66,28 +66,32 @@ struct CustomTextFieldView: View {
     TextField("Enter Decimal value", text: $textValueTwo)
       .textFieldStyle(.roundedBorder)
       .keyboardType(.decimalPad)
-      
-      .onChange(of: textValueTwo) { newValue in
-        // Restrict mulitple dots
-        let filtered = textValueTwo.filter { $0 == "." }
-        if filtered.count > 1, let index = textValueTwo.firstIndex(of: ".") {
-          textValueTwo.removeAll(where: { $0 == "." })
-          textValueTwo.insert(".", at: index)
-        } else {
-          textValueTwo = newValue
-        }
-      }
+      .onChange(of: textValueTwo, perform: handleTextFieldValue)
       .focused($nameIsFocused)
-      .toolbar {
-        ToolbarItemGroup(placement: .keyboard) {
-          if nameIsFocused {
-            Spacer()
-            Button("Done") {
-              nameIsFocused = false
-            }
-          }
+      .toolbar(content: doneButton)
+  }
+  
+  private func handleTextFieldValue(_ newValue: String) {
+    // Restrict mulitple dots
+    let filtered = textValueTwo.filter { $0 == "." }
+    if filtered.count > 1, let index = textValueTwo.firstIndex(of: ".") {
+      textValueTwo.removeAll(where: { $0 == "." })
+      textValueTwo.insert(".", at: index)
+    } else {
+      textValueTwo = newValue
+    }
+  }
+  
+  @ToolbarContentBuilder
+  private func doneButton() -> some ToolbarContent {
+    ToolbarItemGroup(placement: .keyboard) {
+      if nameIsFocused {
+        Spacer()
+        Button("Done") {
+          nameIsFocused = false
         }
       }
+    }
   }
 }
 
