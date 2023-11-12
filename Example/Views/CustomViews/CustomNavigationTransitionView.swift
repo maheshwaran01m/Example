@@ -11,11 +11,12 @@ struct CustomNavigationTransitionView: View {
   
   var body: some View {
     TabView {
+      exampleViewThree
       exampleViewTwo
       exampleViewOne
     }
     .tabViewStyle(.page)
-    .indexViewStyle(.page)
+    .indexViewStyle(.page(backgroundDisplayMode: .always))
   }
   
   // MARK: - Example One
@@ -79,6 +80,34 @@ struct CustomNavigationTransitionView: View {
           .onChange(of: viewModel.selectedItem) { _ in
             withAnimation {
               viewModel.isEnabled = false
+            }
+          }
+      }
+    }
+  }
+  
+  // MARK: - Example Three
+  
+  @State private var isPresented = false
+  
+  var exampleViewThree: some View {
+    ZStack {
+      Text("Thrid View")
+        .padding()
+        .background(Color.blue.opacity(0.3))
+        .clipShape(Capsule())
+        .onTapGesture {
+          withAnimation(.linear.speed(2)) {
+            isPresented.toggle()
+          }
+        }
+      
+      if isPresented {
+        Color.pink.opacity(0.3)
+          .transition(.move(edge: .trailing))
+          .onTapGesture {
+            withAnimation(.linear.speed(2)) {
+              isPresented.toggle()
             }
           }
       }
