@@ -92,7 +92,7 @@ struct CustomNavigationTransitionView: View {
   
   var exampleViewThree: some View {
     ZStack {
-      Text("Thrid View")
+      Text("Third View")
         .padding()
         .background(Color.blue.opacity(0.3))
         .clipShape(Capsule())
