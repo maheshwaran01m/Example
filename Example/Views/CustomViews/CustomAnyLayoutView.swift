@@ -26,6 +26,7 @@ struct CustomAnyLayoutView: View {
   var body: some View {
     TabView {
       anyLayoutView
+      verticalSizeClassView
       horizontalSizeClassView
     }
     .tabViewStyle(.page)
@@ -55,6 +56,27 @@ struct CustomAnyLayoutView: View {
     }
   }
   
+  // MARK: - VerticalSize
+  
+  private var verticalSizeClassView: some View {
+    VStack(spacing: 10) {
+      Text("Veritical: \(verticalSizeClass.debugDescription)")
+      
+      if verticalSizeClass == .compact {
+        VStack {
+          Text("One")
+          Text("Two")
+          Text("Three")
+        }
+      } else {
+        HStack {
+          Text("One")
+          Text("Two")
+          Text("Three")
+        }
+      }
+    }
+  }
   
   // MARK: - AnyLayout
   
