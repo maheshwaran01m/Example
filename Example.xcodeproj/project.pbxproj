@@ -78,6 +78,7 @@
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
 		9DB44AFD2A891F81003844A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */; };
 		9DB644E82A91AFF000768230 /* CustomViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB644E72A91AFF000768230 /* CustomViewHeight.swift */; };
+		9DC94C562B048293007C7955 /* CustomRotationEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC94C552B048293007C7955 /* CustomRotationEffectView.swift */; };
 		9DD6634F2AA0D1DD008A4816 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6634E2AA0D1DD008A4816 /* CustomMenuView.swift */; };
 		9DD663512AA1B185008A4816 /* CustomPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD663502AA1B185008A4816 /* CustomPropertyWrapper.swift */; };
 		9DDF4F7B2ADC233F00CF8DE0 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF4F7A2ADC233F00CF8DE0 /* ViewExtensions.swift */; };
@@ -158,6 +159,7 @@
 		9DB44AF92A891F81003844A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DB644E72A91AFF000768230 /* CustomViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewHeight.swift; sourceTree = "<group>"; };
+		9DC94C552B048293007C7955 /* CustomRotationEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRotationEffectView.swift; sourceTree = "<group>"; };
 		9DD6634E2AA0D1DD008A4816 /* CustomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 		9DD663502AA1B185008A4816 /* CustomPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPropertyWrapper.swift; sourceTree = "<group>"; };
 		9DDF4F7A2ADC233F00CF8DE0 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				9D3425422AE7E19C00091558 /* CustomPreferenceKeyView.swift */,
 				9D229FB52AF4E156005435B9 /* CustomNavigationTransitionView.swift */,
 				9D21A8BD2AFF25E2001C47C4 /* CustomAnyLayoutView.swift */,
+				9DC94C552B048293007C7955 /* CustomRotationEffectView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				9D0119E22A8925FE005990BB /* CustomColorView.swift in Sources */,
 				9DEBC5472A9DA320009A5E08 /* CustomQuickLookView.swift in Sources */,
 				9D011A0A2A8928F6005990BB /* CustomToolBarButtonView.swift in Sources */,
+				9DC94C562B048293007C7955 /* CustomRotationEffectView.swift in Sources */,
 				9D0119FC2A8927EF005990BB /* CustomBlurView.swift in Sources */,
 				9D011A062A8928AE005990BB /* CustomLoaderView.swift in Sources */,
 				9D21A8BE2AFF25E2001C47C4 /* CustomAnyLayoutView.swift in Sources */,

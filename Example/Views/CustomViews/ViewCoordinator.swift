@@ -17,7 +17,7 @@ extension ContentView {
          link, form, swipe, refresh, overlay, disclosureView, groupBox, gesture, progess, asyncImageView,
          viewHeight, sheetView, bottomSheet, customLayout, popOver, quickLook, menu, propertyWrapper, notification,
          toast, overlaySheet, navigation, transition, navigationTransition, dragGesture, observedObjectView, binding,
-         grid, mask, audio, imageCache, preferenceKey, anyLayout
+         grid, mask, audio, imageCache, preferenceKey, anyLayout, rotationEffect
     
     var title: String {
       switch self {
@@ -85,6 +85,7 @@ extension ContentView {
       case .imageCache: return "Image Cache"
       case .preferenceKey: return "Preference Key"
       case .anyLayout: return "Any Layout"
+      case .rotationEffect: return "Rotation Effect"
       }
     }
     
@@ -156,6 +157,7 @@ extension ContentView {
       case .imageCache: CustomImageCacheView()
       case .preferenceKey: CustomPreferenceKeyView()
       case .anyLayout: CustomAnyLayoutView()
+      case .rotationEffect: CustomRotationEffectView()
       }
     }
   }
