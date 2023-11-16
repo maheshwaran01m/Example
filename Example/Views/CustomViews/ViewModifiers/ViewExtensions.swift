@@ -19,3 +19,13 @@ extension Binding where Value == Bool {
     }
   }
 }
+
+// MARK: - Hashable
+
+struct ExampleForHashable: Hashable {
+  let title: String
+  
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(title)
+  }
+}
