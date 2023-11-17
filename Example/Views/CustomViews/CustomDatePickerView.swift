@@ -39,6 +39,13 @@ struct CustomDatePickerView: View {
     DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
       .labelsHidden()
   }
+  
+  private func formatter() {
+    let timeInterval: TimeInterval = 9_000 // 3600
+    
+    let formattedDuration = timeInterval.formattedString()
+    print(formattedDuration)
+  }
 }
 
 struct CustomDatePickerView_Previews: PreviewProvider {
