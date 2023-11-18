@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 public extension View {
   
   @ViewBuilder
