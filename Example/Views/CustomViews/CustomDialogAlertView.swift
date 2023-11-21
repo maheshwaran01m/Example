@@ -29,7 +29,7 @@ struct CustomDialogAlertView: View {
     Button("Choose Files") {
       isPresented.toggle()
     }
-    .confirmationDialog("Choose Source Type", isPresented: $isPresented) {
+    .confirmationDialog("Choose Source Type", isPresented: $isPresented, titleVisibility: .visible) {
       Button("Photo") {
         showPhoto.toggle()
       }
