@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CustomTextFieldView: View {
   
@@ -65,21 +66,12 @@ struct CustomTextFieldView: View {
     
     TextField("Enter Decimal value", text: $textValueTwo)
       .textFieldStyle(.roundedBorder)
-      .keyboardType(.decimalPad)
-      .onChange(of: textValueTwo, perform: handleTextFieldValue)
+      .numericText($textValueTwo, isDecimal: true)
       .focused($nameIsFocused)
       .toolbar(content: doneButton)
-  }
-  
-  private func handleTextFieldValue(_ newValue: String) {
-    // Restrict mulitple dots
-    let filtered = textValueTwo.filter { $0 == "." }
-    if filtered.count > 1, let index = textValueTwo.firstIndex(of: ".") {
-      textValueTwo.removeAll(where: { $0 == "." })
-      textValueTwo.insert(".", at: index)
-    } else {
-      textValueTwo = newValue
-    }
+      .onAppear {
+        UITextField.appearance().clearButtonMode = .whileEditing
+      }
   }
   
   @ToolbarContentBuilder
@@ -98,5 +90,38 @@ struct CustomTextFieldView: View {
 struct CustomTextFieldView_Previews: PreviewProvider {
   static var previews: some View {
     CustomTextFieldView()
+  }
+}
+
+struct NumericViewModifier: ViewModifier {
+  
+  @Binding var text: String
+  var isDecimal = false
+  
+  func body(content: Content) -> some View {
+    content
+      .keyboardType(isDecimal ? .decimalPad : .numberPad)
+      .onReceive(Just(text)) { value in
+        var numeric = "0123456789"
+        let separtor = Locale.current.decimalSeparator ?? "."
+        
+        if isDecimal { numeric += separtor }
+        
+        if value.components(separatedBy: separtor).count-1 > 1 {
+          text = value.dropLast().description
+        } else {
+          let filtered = value.filter { numeric.contains($0) }
+          
+          guard filtered != value else { return }
+          text = filtered
+        }
+      }
+  }
+}
+
+extension View {
+  
+  func numericText(_ binding: Binding<String>, isDecimal: Bool = false) -> some View {
+    self.modifier(NumericViewModifier(text: binding, isDecimal: isDecimal))
   }
 }
