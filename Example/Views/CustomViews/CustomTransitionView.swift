@@ -19,7 +19,7 @@ struct CustomTransitionView: View {
       mainView(.move(edge: .leading), name: "Move leading")
       mainView(.move(edge: .trailing), name: "Move trailing")
       mainView(.asymmetric(insertion: .move(edge: .leading),
-                           removal: .move(edge: .trailing)), name: "Custom")
+                           removal: .move(edge: .bottom)), name: "Custom")
     }
     .tabViewStyle(.page(indexDisplayMode: .never))
   }
