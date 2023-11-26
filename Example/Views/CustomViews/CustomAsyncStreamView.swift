@@ -32,10 +32,11 @@ class CustomAsyncStreamViewModel: ObservableObject {
   }
   
   func getCurrentData() {
-//    manager.getData { [weak self] value in
-//      self?.currentNumber = value
-//    }
-    
+    /*
+    manager.getData { [weak self] value in
+      self?.currentNumber = value
+    }
+    */
     
    let task = Task {
       for await value in manager.getAsyncStream() {
