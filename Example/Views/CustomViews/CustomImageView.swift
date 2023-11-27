@@ -18,7 +18,6 @@ struct CustomImageView: View {
     }
     .tabViewStyle(.page)
     .indexViewStyle(.page(backgroundDisplayMode: .always))
-    
   }
   
   private var customImageView: some View {
