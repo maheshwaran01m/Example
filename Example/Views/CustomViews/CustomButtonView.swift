@@ -70,26 +70,23 @@ struct CustomButtonView: View {
     VStack {
       Button { } label: {
         Text("Log in")
-        .foregroundColor(.white)
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(.blue)
-        .clipShape(Capsule())
-        .contentShape(Capsule())
+          .foregroundColor(.white)
+          .padding()
+          .frame(maxWidth: .infinity)
+          .background(.blue)
+          .clipShape(Capsule())
+          .contentShape(Capsule())
       }
-           
-
+      
       Button { } label: {
         Text("Rest Password")
           .foregroundColor(.white)
           .padding()
           .frame(maxWidth: .infinity)
-          .background(.gray.opacity(0.5))
+          .background(.gray.opacity(0.8))
           .clipShape(Capsule())
           .contentShape(Capsule())
       }
-            
-            
     }
     .fixedSize(horizontal: true, vertical: false)
   }
