@@ -37,7 +37,6 @@ struct CustomTimeLineView: View {
     }
     .buttonStyle(.borderedProminent)
   }
-
 }
 
 #Preview {
