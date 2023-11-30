@@ -77,6 +77,7 @@
 		9DB44AF82A891F80003844A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB44AF72A891F80003844A3 /* ContentView.swift */; };
 		9DB44AFA2A891F81003844A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AF92A891F81003844A3 /* Assets.xcassets */; };
 		9DB44AFD2A891F81003844A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */; };
+		9DB518E32B18AA54008188F4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB518E22B18AA54008188F4 /* StringExtensions.swift */; };
 		9DB644E82A91AFF000768230 /* CustomViewHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB644E72A91AFF000768230 /* CustomViewHeight.swift */; };
 		9DC94C562B048293007C7955 /* CustomRotationEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC94C552B048293007C7955 /* CustomRotationEffectView.swift */; };
 		9DC94C582B0488FC007C7955 /* CustomTimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC94C572B0488FC007C7955 /* CustomTimeLineView.swift */; };
@@ -161,6 +162,7 @@
 		9DB44AF72A891F80003844A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DB44AF92A891F81003844A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB44AFC2A891F81003844A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DB518E22B18AA54008188F4 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		9DB644E72A91AFF000768230 /* CustomViewHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewHeight.swift; sourceTree = "<group>"; };
 		9DC94C552B048293007C7955 /* CustomRotationEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRotationEffectView.swift; sourceTree = "<group>"; };
 		9DC94C572B0488FC007C7955 /* CustomTimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimeLineView.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				9DDF4F7A2ADC233F00CF8DE0 /* ViewExtensions.swift */,
 				9D9BA9C32AE3B28500717B22 /* AlertExtensions.swift */,
 				9DDC08BF2B0701A800EDC696 /* TimeInterval.swift */,
+				9DB518E22B18AA54008188F4 /* StringExtensions.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				9D21A8BE2AFF25E2001C47C4 /* CustomAnyLayoutView.swift in Sources */,
 				9D0119EA2A892695005990BB /* CustomDatePickerView.swift in Sources */,
 				9DD663512AA1B185008A4816 /* CustomPropertyWrapper.swift in Sources */,
+				9DB518E32B18AA54008188F4 /* StringExtensions.swift in Sources */,
 				9D0119DC2A892436005990BB /* CustomImageView.swift in Sources */,
 				9DD6634F2AA0D1DD008A4816 /* CustomMenuView.swift in Sources */,
 				9D011A102A892960005990BB /* CustomTimerView.swift in Sources */,

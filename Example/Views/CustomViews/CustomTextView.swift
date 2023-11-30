@@ -19,6 +19,7 @@ struct CustomTextView: View {
         rectangleView
         roundedRectangleView
       }
+      titleView2
       roundRectangleViewTwo
       exampleForFixedSize
     }
@@ -27,6 +28,11 @@ struct CustomTextView: View {
   
   private var titleView: some View {
     Text("Hello, World!")
+      .font(.title)
+  }
+  
+  private var titleView2: some View {
+    "Hello, World!"
       .font(.title)
   }
   
