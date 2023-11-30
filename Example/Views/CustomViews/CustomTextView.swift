@@ -20,6 +20,7 @@ struct CustomTextView: View {
         roundedRectangleView
       }
       roundRectangleViewTwo
+      exampleForFixedSize
     }
     .tabViewStyle(.page)
   }
@@ -78,6 +79,19 @@ struct CustomTextView: View {
       }
     }
     .frame(width: 320, height: 320)
+  }
+  
+  private var exampleForFixedSize: some View {
+    Text("Rest Password using your email address or phone number.")
+      .foregroundColor(.white)
+      .padding()
+      .frame(maxWidth: .infinity)
+      .background(.gray.opacity(0.8))
+      .multilineTextAlignment(.leading)
+      .clipShape(Capsule())
+    
+      .fixedSize(horizontal: false, vertical: true)
+      .padding(.horizontal, 10)
   }
 }
 
