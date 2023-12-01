@@ -14,6 +14,7 @@ struct CustomTextView: View {
       VStack {
         titleView
         titleViewOne
+        titleView3
       }
       titleView2
       VStack(spacing: 40) {
@@ -38,6 +39,19 @@ struct CustomTextView: View {
       .foregroundColor(Color.primary)
       .background(Color.gray.opacity(0.2),
                   in: RoundedRectangle(cornerRadius: 16))
+  }
+  
+  private var titleView3: some View {
+    "Hello, World!"
+      .font(.title)
+      .padding()
+      .foregroundColor(Color.primary)
+      .background(Color.blue.opacity(0.1),
+                  in: Capsule())
+      .background(
+        Capsule()
+          .stroke(Color.secondary, lineWidth: 1.5)
+      )
   }
   
   private var titleViewOne: some View {
