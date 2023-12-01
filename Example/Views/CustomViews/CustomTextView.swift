@@ -15,11 +15,11 @@ struct CustomTextView: View {
         titleView
         titleViewOne
       }
+      titleView2
       VStack(spacing: 40) {
         rectangleView
         roundedRectangleView
       }
-      titleView2
       roundRectangleViewTwo
       exampleForFixedSize
     }
@@ -34,6 +34,10 @@ struct CustomTextView: View {
   private var titleView2: some View {
     "Hello, World!"
       .font(.title)
+      .padding()
+      .foregroundColor(Color.primary)
+      .background(Color.gray.opacity(0.2),
+                  in: RoundedRectangle(cornerRadius: 16))
   }
   
   private var titleViewOne: some View {
