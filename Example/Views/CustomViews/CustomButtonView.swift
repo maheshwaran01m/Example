@@ -11,6 +11,7 @@ struct CustomButtonView: View {
   
   var body: some View {
     TabView {
+      saveButtonViews
       buttonViewExamples
       buttonWithLabel
       buttonTapAction
@@ -89,6 +90,35 @@ struct CustomButtonView: View {
       }
     }
     .fixedSize(horizontal: true, vertical: false)
+  }
+  
+  private var saveButtonViews: some View {
+    HStack(spacing: 5) {
+      "Cancel"
+        .font(.title3)
+        .padding()
+        .frame(maxWidth: .infinity)
+        .foregroundColor(Color.primary)
+        .background(Color.blue.opacity(0.1),
+                    in: Capsule())
+        .background(
+          Capsule()
+            .stroke(Color.secondary, lineWidth: 1.5)
+        )
+      
+      "Save"
+        .font(.title3)
+        .padding()
+        .frame(maxWidth: .infinity)
+        .foregroundColor(Color.white)
+        .background(Color.blue,
+                    in: Capsule())
+        .background(
+          Capsule()
+            .stroke(Color.secondary, lineWidth: 1.5)
+        )
+    }
+    .padding(.horizontal)
   }
 }
 
