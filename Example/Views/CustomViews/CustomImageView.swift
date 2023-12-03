@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomImageView: View {
   var body: some View {
     TabView {
+      customImageAnimationView
       customImageColor
       customImageView
       systemImageView
@@ -18,6 +19,7 @@ struct CustomImageView: View {
     }
     .tabViewStyle(.page)
     .indexViewStyle(.page(backgroundDisplayMode: .always))
+    .navigationBarTitleDisplayMode(.inline)
   }
   
   private var customImageView: some View {
@@ -73,6 +75,35 @@ struct CustomImageView: View {
         .renderingMode(.template)
         .font(.largeTitle)
         .foregroundStyle(Color.primary, Color.blue)
+    }
+  }
+}
+
+extension CustomImageView {
+  
+  var customImageAnimations: [String] {
+    (1...5).map { "landscape-0\($0)" }
+  }
+  
+  private var customImageAnimationView: some View {
+    GeometryReader { proxy in
+      ScrollView(.horizontal) {
+        
+        HStack(spacing: 0) {
+          ForEach(customImageAnimations, id: \.self) { item in
+            GeometryReader { geometry in
+              Image(item)
+                .resizable()
+                .scaledToFill()
+                .frame(width: proxy.size.width)
+                .offset(x: -geometry.frame(in: .global).origin.x)
+                .clipped()
+                .border(.red)
+            }
+            .frame(width: proxy.size.width)
+          }
+        }
+      }
     }
   }
 }
