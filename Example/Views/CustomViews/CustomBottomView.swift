@@ -24,7 +24,6 @@ struct CustomBottomView: View {
 
 struct CustomBottomView_Previews: PreviewProvider {
   
-  
   static var previews: some View {
     @State var isPresented = true
     
