@@ -46,7 +46,6 @@ struct CustomAlertView: View {
       VStack {
         TextField("Enter FileName", text: $fileName)
         
-        
         Button("Save") {}
         Button("Skip", role: .cancel) {
           print("Skip")
