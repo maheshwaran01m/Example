@@ -20,7 +20,7 @@ struct CustomBlurView: View {
     .ignoresSafeArea(.container)
   }
   
-  // Background Blur
+  // MARK: - Background Blur
   private var blurViewOne: some View {
     ZStack {
       Color.blue
@@ -28,7 +28,7 @@ struct CustomBlurView: View {
     }
   }
   
-  // ImageBlur
+  // MARK: - ImageBlur
   
   var imageBlurView: some View {
     ZStack {
