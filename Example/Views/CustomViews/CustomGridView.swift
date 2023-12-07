@@ -74,7 +74,6 @@ extension CustomGridView {
           height += rowHeight + spacing
         }
       }
-      
       return .init(width: maxWidth, height: height)
     }
     
