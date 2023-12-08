@@ -11,6 +11,7 @@ public struct OverlaySheet<V: View>: ViewModifier {
   
   @Binding var isPresented: Bool
   @Environment(\.horizontalSizeClass) var sizeClass
+  @State private var height = CGFloat.zero
   private var contentView: V
   
   public init(isPresented: Binding<Bool>, 
@@ -23,6 +24,8 @@ public struct OverlaySheet<V: View>: ViewModifier {
     content
       .sheet(isPresented: $isPresented) {
         contentView
+          .getHeight($height)
+          .presentationDetents([.height(height)])
           .clearbackgroundView(withColor: sizeClass == .compact ? .white : .clear) {
             isPresented = false
           }

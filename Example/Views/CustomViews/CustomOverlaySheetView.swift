@@ -17,10 +17,17 @@ struct CustomOverlaySheetView: View {
         isPresented.toggle()
       }
       .overlaySheet(isPresented: $isPresented) {
-        Text("Hello sheet")
-          .frame(width: 200, height: 200)
-          .background(.background)
-          .presentationDetents([.height(200)])
+        VStack {
+          Text("Hello sheet")
+            .frame(width: 200, height: 100)
+            .background(.background)
+          Text("Hello sheet")
+            .frame(width: 200, height: 100)
+            .background(.background)
+          Text("Hello sheet")
+            .frame(width: 200, height: 100)
+            .background(.background)
+        }
       }
   }
 }
