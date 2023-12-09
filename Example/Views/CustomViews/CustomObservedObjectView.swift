@@ -9,10 +9,21 @@ import SwiftUI
 
 struct CustomObservedObjectView: View {
   
+  var body: some View {
+    TabView {
+      exampleUsingStateObject
+    }
+    .tabViewStyle(.page)
+    .indexViewStyle(.page(backgroundDisplayMode: .never))
+  }
+  
+  
+  // MARK: - StateObject
+  
   @StateObject private var viewModel = CustomObservedObjectViewModelOne()
   @StateObject private var searchVM = CustomObservedObjectViewModelTwo()
   
-  var body: some View {
+  var exampleUsingStateObject: some View {
     VStack {
       Text(searchVM.searchText ?? "")
         .bold()
