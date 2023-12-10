@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CustomObservedObjectView: View {
   
@@ -98,17 +99,36 @@ fileprivate class CustomObservedObjectViewModel1: ObservableObject {
   init(_ text: String? = "Example") {
     self.text = text
     self.secondVM = CustomObservedObjectViewModel2(text)
+    setupNestedObject()
+  }
+  
+  private var cancelBag = Set<AnyCancellable>()
+  
+  func setupNestedObject() {
+    secondVM.republish(self, cancelBag: &cancelBag)
   }
 }
 
 class CustomObservedObjectViewModel2: ObservableObject {
-  @Published var text: String? {
-    didSet {
-      print("Second: \(text ?? "")")
-    }
-  }
+  @Published var text: String?
   
   init(_ text: String? = "Example") {
     self.text = text
+  }
+}
+
+extension ObservableObject where Self.ObjectWillChangePublisher == ObservableObjectPublisher  {
+  
+  func republish<T: ObservableObject>(
+    _ observableObject: T,
+    cancelBag: inout Set<AnyCancellable>)
+  where T.ObjectWillChangePublisher == ObservableObjectPublisher  {
+    
+    objectWillChange
+      .receive(on: DispatchQueue.main)
+      .sink { [weak observableObject] _ in
+        observableObject?.objectWillChange.send()
+      }
+      .store(in: &cancelBag)
   }
 }
