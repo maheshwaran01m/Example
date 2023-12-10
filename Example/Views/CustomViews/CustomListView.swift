@@ -97,8 +97,8 @@ struct CustomListView: View {
   
   var listViewTint: some View {
     List(1..<5) { i in
-        Label("Row \(i)", systemImage: "\(i).circle")
-            .listItemTint(i.isMultiple(of: 2) ? .red : .green)
+      Label("Row \(i)", systemImage: "\(i).circle")
+        .listItemTint(i.isMultiple(of: 2) ? .red : .green)
     }
   }
   
