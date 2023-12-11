@@ -29,8 +29,6 @@ struct CustomStepperView: View {
     Stepper("\(sleepAmount) hours", value: $sleepAmount, in: 4...12)
       .padding()
   }
-  
-  
 }
 
 struct CustomStepperView_Previews: PreviewProvider {
