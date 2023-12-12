@@ -71,8 +71,7 @@ struct CustomDialogAlertView: View {
       .onTapGesture {
         showingConfirmation = true
       }
-    
-      .confirmationDialog("Change background", isPresented: $showingConfirmation) {
+      .confirmationDialog("Change background", isPresented: $showingConfirmation, titleVisibility: .visible) {
         Button("Gray") { backgroundColor = .gray }
         Button("Green") { backgroundColor = .green.opacity(0.3) }
         Button("Blue") { backgroundColor = .blue.opacity(0.2) }
