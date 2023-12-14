@@ -21,7 +21,6 @@ struct CustomColorPickerView: View {
         .background(
           Color.secondary.opacity(0.2), in: RoundedRectangle(cornerRadius: 8))
     }
-    
   }
 }
 
