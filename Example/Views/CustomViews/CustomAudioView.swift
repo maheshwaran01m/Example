@@ -36,7 +36,6 @@ struct CustomAudioView: View {
     .buttonStyle(.borderedProminent)
     .tint(.pink)
   }
-  
 }
 
 #Preview {
