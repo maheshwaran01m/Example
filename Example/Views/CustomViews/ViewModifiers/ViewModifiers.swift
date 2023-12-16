@@ -19,7 +19,7 @@ public extension View {
   }
   
   @ViewBuilder
-  func overlayView<Content: View>(_ content: () -> Content)  -> some View {
+  func trailingOverlayView<Content: View>(_ content: () -> Content)  -> some View {
     self.overlay(alignment: .topTrailing) {
       content()
         .alignmentGuide(.top) { $0[.top] + 8 }
@@ -74,6 +74,16 @@ public extension View {
             isClicked?()
           }
       )
+    }
+  }
+}
+
+extension UINavigationItem {
+  var largeTitleTwoLineMode: Int {
+    get {
+      value(forKey: "__largeTitleTwoLineMode") as? Int ?? 0
+    } set {
+      setValue(newValue, forKey: "__largeTitleTwoLineMode")
     }
   }
 }
