@@ -185,7 +185,7 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
       publisher = .init(value)
       _value = .init(initialValue: value)
     } catch {
-      print("Error while reading document, reason: \(error.localizedDescription)")
+//      print("Error while reading document, reason: \(error.localizedDescription)")
       publisher = .init(nil)
       _value = .init(initialValue: wrappedValue ?? nil)
     }
@@ -203,7 +203,7 @@ struct FileManagerProperty<T: Codable>: DynamicProperty {
       publisher = .init(value)
       _value = .init(initialValue: value)
     } catch {
-      print("Error while reading document, reason: \(error.localizedDescription)")
+//      print("Error while reading document, reason: \(error.localizedDescription)")
       publisher = .init(nil)
       _value = .init(initialValue: wrappedValue ?? nil)
     }
