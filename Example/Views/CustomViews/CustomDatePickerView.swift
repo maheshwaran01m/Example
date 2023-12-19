@@ -12,7 +12,6 @@ struct CustomDatePickerView: View {
   @State private var wakeUp = Date.now
   
   var body: some View {
-    
     TabView {
       dateStyleOne
       datePickerWheel
