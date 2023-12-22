@@ -18,9 +18,7 @@ struct CustomMoveItemView: View {
       }
       .onMove(perform: move)
     }
-    .toolbar {
-      EditButton()
-    }
+    .toolbar(content: EditButton.init)
   }
   
   func move(from source: IndexSet, to destination: Int) {
