@@ -72,7 +72,6 @@ struct CustomAlertView: View {
     case badURL
     case custom(String)
     
-    
     var errorDescription: String? {
       switch self {
       case .badURL:
