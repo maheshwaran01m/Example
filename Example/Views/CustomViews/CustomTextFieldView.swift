@@ -12,6 +12,7 @@ struct CustomTextFieldView: View {
   
   var body: some View {
     TabView {
+      alertTextFieldView
       textFieldFocuseView
       decimalView
     }
@@ -82,6 +83,58 @@ struct CustomTextFieldView: View {
         Button("Done") {
           nameIsFocused = false
         }
+      }
+    }
+  }
+  
+  // MARK: - Alert TextField
+  
+  @StateObject private var viewModel = AlertTextFieldViewModel()
+  
+  var alertTextFieldView: some View {
+    VStack(spacing: 10) {
+      Text(viewModel.customFileName ?? "")
+      
+      Button("Get FileName") {
+        viewModel.showAlert = true
+      }
+    }
+    .alert("Enter FileName", isPresented: $viewModel.showAlert, actions: alertTextFieldGetFileName)
+  }
+  
+  @ViewBuilder
+  private func alertTextFieldGetFileName() -> some View {
+    TextField("Enter FileName", text: $viewModel.fileName)
+      .onAppear(perform: viewModel.updateFileNameText)
+    Button("Cancel", action: {})
+    Button("Done", action: viewModel.updateFileName)
+      .disabled(viewModel.fileName.isEmpty)
+  }
+}
+
+extension CustomTextFieldView {
+  
+  class AlertTextFieldViewModel: ObservableObject {
+    
+    @Published var fileName = " "
+    @Published var customFileName: String?
+    @Published var showAlert = false
+    @Published var isDoneEnabled = false
+    
+    func updateFileName() {
+      if !fileName.isEmpty {
+        customFileName = fileName
+      }
+    }
+    
+    func updateFileNameText() {
+      /* Issue when implementing an alert with a TextField. Save button action to be disabled until
+       user enter some fileName, but the action block will never executed when the button
+       has initially disable, so i've used some hack to handle this case.
+       Refer: https://developer.apple.com/forums/thread/737964
+       */
+      DispatchQueue.main.async { [weak self] in
+        self?.fileName = ""
       }
     }
   }
