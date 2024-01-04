@@ -60,7 +60,7 @@ struct CustomStackView: View {
       Text("Hello, world!")
       Text("This is inside a stack")
     }
-    .border(.red)
+    .border(.blue)
   }
 }
 
