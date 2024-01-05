@@ -38,7 +38,6 @@ struct CustomImageCacheView: View {
             .clipShape(RoundedRectangle(cornerRadius: 8))
         }
       }
-      
       buttonViews
     }
   }
